@@ -86,7 +86,7 @@ precomputed_encs_file = os.path.join(
 if os.path.exists(precomputed_encs_file):
     load_res = pickle.load(open(precomputed_encs_file, 'rb'))
 else:
-    dataloader = DataLoader(dataset, opt.batch_size, shuffle=False, num_workers=8, pin_memory=True)    
+    dataloader = DataLoader(dataset, opt.batch_size, shuffle=False, num_workers=15, pin_memory=True)
     
     enc_coll = []
     label_coll = []
@@ -179,7 +179,7 @@ import sys
 import csv
 os.makedirs('results', exist_ok=True)
 savename = '; '.join(x.replace('--','') for x in sys.argv[1:])
-with open(f'results/{opt.savename}.csv', 'a') as csv_file:
+with open(f'results1/{opt.savename}.csv', 'a') as csv_file:
     writer = csv.writer(csv_file)
     writer.writerow([savename, np.mean(accs1), np.std(accs1), np.max(accs1), np.min(accs1), np.mean(accs5), np.std(accs5), np.max(accs5), np.min(accs5)])
     csv_file.close()    

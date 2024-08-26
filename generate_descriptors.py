@@ -9,7 +9,7 @@ openai.api_key = 'your_key'
 #%% Example Description Generation for FGVCAircraft
 from torchvision.datasets import FGVCAircraft
 
-AIRCRAFT_DIR = '/root/autodl-tmp/datasets/fgvcaircraft'
+AIRCRAFT_DIR = 'your_path/fgvcaircraft'
 data_dir = pathlib.Path(AIRCRAFT_DIR)
 dataset = FGVCAircraft(data_dir, split='test', annotation_level='family', download=True)
 classnames = dataset.classes

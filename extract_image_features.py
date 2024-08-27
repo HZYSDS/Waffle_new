@@ -56,8 +56,8 @@ def load_dataset(name):
     ])
 
     if name == 'imagenet' or name == 'imagenetv2':
-        dataset = ImageNet(root= os.path.join(tools.IMAGENET_DIR,'ILSVRC2012_img_train'), transform=transform)
-        #dataset = ImageNet(root=tools.IMAGENET_DIR, transform=transform)
+        #dataset = ImageNet(root= os.path.join(tools.IMAGENET_DIR,'ILSVRC2012_img_train'), transform=transform)
+        dataset = ImageNet(root=tools.IMAGENET_DIR, transform=transform)
     elif name == 'cub':
         dataset = CUBDataset(root=tools.CUB_DIR, train=True, transform=transform)
     elif name == 'eurosat':
@@ -93,8 +93,8 @@ def load_dataset(name):
 
         dataset = dsclass(str(opt.data_dir) + '/train/', transform=transform, download=False)
     elif name == 'places365':
-        #dataset = Places365(root=tools.PLACES365_DIR, split='train-standard', small=True, transform=transform)
-        dataset = Places365(root=os.path.join(tools.PLACES365_DIR,'a'), split='train-standard', small=True, transform=transform)
+        dataset = Places365(root=tools.PLACES365_DIR, split='train-standard', small=True, transform=transform)
+        #dataset = Places365(root=os.path.join(tools.PLACES365_DIR,'a'), split='train-standard', small=True, transform=transform)
     elif name == 'pets':
         dataset = OxfordIIITPet(root=tools.PETS_DIR, split='trainval', transform=transform)
     elif name == 'food101':

@@ -108,7 +108,7 @@ def load_dataset(name):
     elif name == 'cars':
         dataset = StanfordCars(root=tools.CARS_DIR, split='train', transform=transform)
     elif name == 'cifar100':
-        dataset = CIFAR100(root=os.path.join(tools.CIFAR100_DIR,'cifar-100-python'), train=True, transform=transform)
+        dataset = CIFAR100(root=tools.CIFAR100_DIR, train=True, transform=transform)
     elif name == 'caltech256':
         data_dir = pathlib.Path(tools.CALTECH256_DIR)
         dataset = Caltech256(data_dir, transform=transform)

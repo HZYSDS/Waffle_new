@@ -55,7 +55,7 @@ def load_dataset(name):
     ])
 
     if name == 'imagenet' or name == 'imagenetv2':
-        dataset = ImageNet(root=tools.IMAGENET_DIR, transform=transform)
+        dataset = ImageNet(root=os.path.join(tools.IMAGENET_DIR,'ILSVRC2012_img_train'), transform=transform)
     elif name == 'cub':
         dataset = CUBDataset(root=tools.CUB_DIR, train=True, transform=transform)
     elif name == 'eurosat':
@@ -67,7 +67,7 @@ def load_dataset(name):
         dsclass = EuroSAT
         ssl._create_default_https_context = ssl._create_unverified_context
         opt.data_dir = tools.EUROSAT_DIR
-        dataset = dsclass(opt.data_dir, transform=transform, download=True)
+        dataset = dsclass(opt.data_dir, transform=transform, download=False)
         opt.classes_to_load = None
 
         train_folder_path = str(opt.data_dir) + '/train/eurosat/2750/'
@@ -106,10 +106,10 @@ def load_dataset(name):
     elif name == 'cars':
         dataset = StanfordCars(root=tools.CARS_DIR, split='train', transform=transform)
     elif name == 'cifar100':
-        dataset = CIFAR100(root=tools.CIFAR100_DIR, train=True, transform=transform)
+        dataset = CIFAR100(root=os.path.join(tools.CIFAR100_DIR,'cifar-100-python'), train=True, transform=transform)
     elif name == 'caltech256':
         data_dir = pathlib.Path(tools.CALTECH256_DIR)
-        dataset = Caltech256(data_dir, transform=transform, download=True)
+        dataset = Caltech256(data_dir, transform=transform, download=False)
         torch.manual_seed(1)
         train_size = int(0.8 * len(dataset))
         test_size = len(dataset) - train_size
@@ -125,7 +125,6 @@ def load_dataset(name):
         dataset = train_dataset
     else:
         raise ValueError(f"Dataset {name} is not supported.")
-
     return dataset
 
 

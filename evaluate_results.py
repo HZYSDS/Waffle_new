@@ -84,3 +84,5 @@ for file in files:
 #%% Print final table.
 print('\n'.join(table_data))
 
+with open('output_table.txt', 'w') as f:
+    f.write('\n'.join(table_data))

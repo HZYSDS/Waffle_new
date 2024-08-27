@@ -54,7 +54,7 @@ def load_dataset(name):
     ])
 
     if name == 'imagenet' or name == 'imagenetv2':
-        dataset = ImageNet(root=tools.IMAGENET_DIR, split='train', transform=transform)
+        dataset = ImageNet(root=tools.IMAGENET_DIR, transform=transform)
     elif name == 'cub':
         dataset = CUBDataset(root=tools.CUB_DIR, train=True, transform=transform)
     elif name == 'eurosat':

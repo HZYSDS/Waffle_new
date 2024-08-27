@@ -111,7 +111,7 @@ def load_dataset(name):
         dataset = CIFAR100(root=os.path.join(tools.CIFAR100_DIR,'cifar-100-python'), train=True, transform=transform)
     elif name == 'caltech256':
         data_dir = pathlib.Path(tools.CALTECH256_DIR)
-        dataset = Caltech256(data_dir, transform=transform, download=True)
+        dataset = Caltech256(data_dir, transform=transform)
         torch.manual_seed(1)
         train_size = int(0.8 * len(dataset))
         test_size = len(dataset) - train_size

@@ -3,6 +3,7 @@ import torch
 import pickle
 import pathlib
 import argparse
+import os
 from tqdm import tqdm
 from torchvision import transforms
 from datasets import CUBDataset
@@ -14,7 +15,7 @@ from torch.utils.data import random_split
 
 import clip
 import tools
-import os
+
 
 torch.multiprocessing.set_sharing_strategy('file_system')
 
@@ -30,7 +31,7 @@ opt = parser.parse_args()
 tools.seed_everything(1)
 
 
-def load_dataset(name):
+def load_dataset(name, os=None):
     opt.image_size = 224
     if opt.model_size == 'ViT-L/14@336px' and opt.image_size != 336:
         print(f'Model size is {opt.model_size} but image size is {opt.image_size}. Setting image size to 336.')
@@ -55,7 +56,7 @@ def load_dataset(name):
     ])
 
     if name == 'imagenet' or name == 'imagenetv2':
-        dataset = ImageNet(root=os.path.join(tools.IMAGENET_DIR,'ILSVRC2012_img_train'), transform=transform)
+        dataset = ImageNet(root= os.path.join(tools.IMAGENET_DIR,'ILSVRC2012_img_train'), transform=transform)
     elif name == 'cub':
         dataset = CUBDataset(root=tools.CUB_DIR, train=True, transform=transform)
     elif name == 'eurosat':

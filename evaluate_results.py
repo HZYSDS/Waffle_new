@@ -3,19 +3,19 @@ import numpy as np
 import pandas as pd
 
 files = [
-    'results1/baselines.csv',
-    'results1/baselines_concept.csv',
-    'results1/baselines_gpt.csv',
-    'results1/shared_randomized_descriptions.csv',
-    'results1/shared_randomized_descriptions_2xbudget.csv',
-    'results1/swapped_descriptions.csv',
-    'results1/scrambled_descriptions.csv',
-    'results1/randomized_descriptions.csv',
-    'results1/randomized_descriptions_5xbudget.csv',
-    'results1/waffleclip.csv',
-    'results1/waffleclip_concepts.csv',
-    'results1/waffleclip_gpt.csv',
-    'results1/waffleclip_gpt_concepts.csv',
+    'results_waffle/baselines.csv',
+    'results_waffle/baselines_concept.csv',
+    'results_waffle/baselines_gpt.csv',
+    'results_waffle/shared_randomized_descriptions.csv',
+    'results_waffle/shared_randomized_descriptions_2xbudget.csv',
+    'results_waffle/swapped_descriptions.csv',
+    'results_waffle/scrambled_descriptions.csv',
+    'results_waffle/randomized_descriptions.csv',
+    'results_waffle/randomized_descriptions_5xbudget.csv',
+    'results_waffle/waffleclip.csv',
+    'results_waffle/waffleclip_concepts.csv',
+    'results_waffle/waffleclip_gpt.csv',
+    'results_waffle/waffleclip_gpt_concepts.csv',
 ]
 
 #%% Extract classification accuracies from files.

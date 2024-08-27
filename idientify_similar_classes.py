@@ -28,7 +28,7 @@ def get_class_names(dataset):
     if dataset == 'imagenetv2':
         class_names = tools.openai_imagenet_classes
     else:
-        with open(f'descriptors/dclip_descriptors/descriptors_{dataset}.json', 'rb') as file:
+        with open(f'descriptors/dclip_descriptors_modify/descriptors_{dataset}.json', 'rb') as file:
             data = json.load(file)
         class_names = list(data.keys())
 

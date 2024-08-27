@@ -1,0 +1,65 @@
+results_waffle/baselines.csv
+67.90 \small$\pm0.00$ & 73.37 \small$\pm0.00$ & 62.27 \small$\pm0.00$ & 56.03 \small$\pm0.00$ & 40.46 \small$\pm0.00$ & 92.55 \small$\pm0.00$ & 93.30 \small$\pm0.00$ & 52.87 \small$\pm0.00$ & 67.34 \small$\pm0.00$\\
+54.74 \small$\pm0.00$ & 62.00 \small$\pm0.00$ & 51.28 \small$\pm0.00$ & 40.76 \small$\pm0.00$ & 39.12 \small$\pm0.00$ & 82.59 \small$\pm0.00$ & 85.06 \small$\pm0.00$ & 43.14 \small$\pm0.00$ & 57.34 \small$\pm0.00$\\
+51.40 \small$\pm0.00$ & 58.17 \small$\pm0.00$ & 45.20 \small$\pm0.00$ & 28.06 \small$\pm0.00$ & 36.69 \small$\pm0.00$ & 78.41 \small$\pm0.00$ & 83.76 \small$\pm0.00$ & 38.51 \small$\pm0.00$ & 52.52 \small$\pm0.00$\\
+--------
+results_waffle/baselines_concept.csv
+nan \small$\pmnan$ & nan \small$\pmnan$ & 63.01 \small$\pm0.00$ & 61.23 \small$\pm0.00$ & 41.07 \small$\pm0.00$ & 93.52 \small$\pm0.00$ & 93.65 \small$\pm0.00$ & nan \small$\pmnan$ & 70.50 \small$\pmnan$\\
+nan \small$\pmnan$ & nan \small$\pmnan$ & 52.23 \small$\pm0.00$ & 48.86 \small$\pm0.00$ & 39.31 \small$\pm0.00$ & 84.66 \small$\pm0.00$ & 86.73 \small$\pm0.00$ & nan \small$\pmnan$ & 62.36 \small$\pmnan$\\
+nan \small$\pmnan$ & nan \small$\pmnan$ & 46.70 \small$\pm0.00$ & 34.04 \small$\pm0.00$ & 37.49 \small$\pm0.00$ & 80.86 \small$\pm0.00$ & 83.40 \small$\pm0.00$ & nan \small$\pmnan$ & 56.50 \small$\pmnan$\\
+--------
+results_waffle/baselines_gpt.csv
+69.98 \small$\pm0.00$ & 75.92 \small$\pm0.00$ & 65.24 \small$\pm0.00$ & 63.70 \small$\pm0.00$ & 42.77 \small$\pm0.00$ & 93.39 \small$\pm0.00$ & 93.51 \small$\pm0.00$ & 55.16 \small$\pm0.00$ & 69.96 \small$\pm0.00$\\
+56.25 \small$\pm0.00$ & 63.66 \small$\pm0.00$ & 53.62 \small$\pm0.00$ & 41.26 \small$\pm0.00$ & 41.65 \small$\pm0.00$ & 83.04 \small$\pm0.00$ & 85.25 \small$\pm0.00$ & 43.83 \small$\pm0.00$ & 58.57 \small$\pm0.00$\\
+53.20 \small$\pm0.00$ & 60.57 \small$\pm0.00$ & 49.24 \small$\pm0.00$ & 30.30 \small$\pm0.00$ & 39.79 \small$\pm0.00$ & 79.12 \small$\pm0.00$ & 84.41 \small$\pm0.00$ & 41.86 \small$\pm0.00$ & 54.81 \small$\pm0.00$\\
+--------
+results_waffle/shared_randomized_descriptions.csv
+69.52 \small$\pm0.18$ & 75.27 \small$\pm0.13$ & 64.45 \small$\pm0.26$ & 60.96 \small$\pm1.93$ & 42.52 \small$\pm0.20$ & 93.48 \small$\pm0.13$ & 93.89 \small$\pm0.13$ & 55.70 \small$\pm0.59$ & 69.47 \small$\pm0.73$\\
+55.83 \small$\pm0.16$ & 63.19 \small$\pm0.12$ & 53.17 \small$\pm0.17$ & 43.10 \small$\pm1.64$ & 40.86 \small$\pm0.19$ & 84.12 \small$\pm0.31$ & 86.46 \small$\pm0.57$ & 43.11 \small$\pm0.59$ & 58.73 \small$\pm0.67$\\
+53.01 \small$\pm0.23$ & 60.01 \small$\pm0.16$ & 48.30 \small$\pm0.14$ & 34.47 \small$\pm1.21$ & 39.18 \small$\pm0.17$ & 80.31 \small$\pm0.26$ & 85.52 \small$\pm0.50$ & 39.93 \small$\pm0.81$ & 55.09 \small$\pm0.57$\\
+--------
+results_waffle/shared_randomized_descriptions_2xbudget.csv
+69.74 \small$\pm0.07$ & 75.40 \small$\pm0.04$ & 64.44 \small$\pm0.22$ & 61.12 \small$\pm1.37$ & 42.71 \small$\pm0.14$ & 93.55 \small$\pm0.10$ & 93.91 \small$\pm0.10$ & 55.93 \small$\pm0.51$ & 69.60 \small$\pm0.53$\\
+55.89 \small$\pm0.10$ & 63.24 \small$\pm0.13$ & 53.15 \small$\pm0.12$ & 42.87 \small$\pm1.76$ & 41.01 \small$\pm0.17$ & 84.29 \small$\pm0.18$ & 86.67 \small$\pm0.24$ & 43.54 \small$\pm0.43$ & 58.83 \small$\pm0.66$\\
+53.03 \small$\pm0.08$ & 60.18 \small$\pm0.14$ & 48.32 \small$\pm0.17$ & 34.53 \small$\pm0.78$ & 39.33 \small$\pm0.15$ & 80.46 \small$\pm0.25$ & 85.56 \small$\pm0.25$ & 40.37 \small$\pm0.35$ & 55.22 \small$\pm0.34$\\
+--------
+results_waffle/swapped_descriptions.csv
+67.13 \small$\pm0.32$ & 73.14 \small$\pm0.19$ & 64.18 \small$\pm0.29$ & 54.51 \small$\pm2.96$ & 37.53 \small$\pm0.37$ & 92.75 \small$\pm0.10$ & 93.77 \small$\pm0.43$ & 49.83 \small$\pm1.07$ & 66.60 \small$\pm1.14$\\
+53.38 \small$\pm0.26$ & 60.70 \small$\pm0.19$ & 52.92 \small$\pm0.17$ & 37.01 \small$\pm2.86$ & 35.97 \small$\pm0.38$ & 82.76 \small$\pm0.30$ & 86.52 \small$\pm0.40$ & 38.53 \small$\pm0.66$ & 55.97 \small$\pm1.07$\\
+50.78 \small$\pm0.17$ & 57.52 \small$\pm0.14$ & 48.21 \small$\pm0.38$ & 28.79 \small$\pm3.23$ & 34.48 \small$\pm0.51$ & 79.08 \small$\pm0.32$ & 85.25 \small$\pm0.37$ & 37.17 \small$\pm1.84$ & 52.66 \small$\pm1.35$\\
+--------
+results_waffle/scrambled_descriptions.csv
+69.24 \small$\pm0.24$ & 75.13 \small$\pm0.08$ & 64.24 \small$\pm0.33$ & 58.68 \small$\pm2.35$ & 42.11 \small$\pm0.13$ & 92.69 \small$\pm0.18$ & 92.86 \small$\pm0.48$ & 54.59 \small$\pm0.53$ & 68.69 \small$\pm0.88$\\
+55.74 \small$\pm0.20$ & 63.00 \small$\pm0.08$ & 52.85 \small$\pm0.28$ & 41.71 \small$\pm2.86$ & 40.91 \small$\pm0.08$ & 82.59 \small$\pm0.10$ & 84.19 \small$\pm0.48$ & 42.99 \small$\pm0.52$ & 58.00 \small$\pm1.05$\\
+52.96 \small$\pm0.18$ & 59.88 \small$\pm0.12$ & 48.63 \small$\pm0.18$ & 30.96 \small$\pm1.63$ & 38.87 \small$\pm0.17$ & 78.64 \small$\pm0.21$ & 83.71 \small$\pm0.31$ & 41.94 \small$\pm0.66$ & 54.45 \small$\pm0.65$\\
+--------
+results_waffle/randomized_descriptions.csv
+68.83 \small$\pm0.11$ & 74.62 \small$\pm0.13$ & 64.23 \small$\pm0.17$ & 56.17 \small$\pm4.20$ & 41.13 \small$\pm0.19$ & 92.97 \small$\pm0.20$ & 93.64 \small$\pm0.30$ & 52.21 \small$\pm0.81$ & 67.97 \small$\pm1.52$\\
+55.09 \small$\pm0.30$ & 62.28 \small$\pm0.14$ & 52.88 \small$\pm0.23$ & 36.53 \small$\pm1.59$ & 39.57 \small$\pm0.16$ & 83.42 \small$\pm0.10$ & 86.37 \small$\pm0.32$ & 39.51 \small$\pm0.70$ & 56.96 \small$\pm0.64$\\
+52.39 \small$\pm0.22$ & 59.25 \small$\pm0.15$ & 48.06 \small$\pm0.46$ & 32.49 \small$\pm2.00$ & 37.81 \small$\pm0.23$ & 79.65 \small$\pm0.10$ & 85.17 \small$\pm0.55$ & 38.15 \small$\pm1.26$ & 54.12 \small$\pm0.88$\\
+--------
+results_waffle/randomized_descriptions_5xbudget.csv
+69.72 \small$\pm0.10$ & 75.36 \small$\pm0.05$ & 64.49 \small$\pm0.17$ & 60.74 \small$\pm1.43$ & 42.39 \small$\pm0.11$ & 93.52 \small$\pm0.08$ & 93.91 \small$\pm0.13$ & 55.05 \small$\pm0.66$ & 69.40 \small$\pm0.57$\\
+55.77 \small$\pm0.07$ & 63.18 \small$\pm0.07$ & 53.24 \small$\pm0.22$ & 42.79 \small$\pm1.49$ & 40.78 \small$\pm0.09$ & 84.16 \small$\pm0.10$ & 86.77 \small$\pm0.21$ & 42.74 \small$\pm0.78$ & 58.68 \small$\pm0.61$\\
+53.03 \small$\pm0.09$ & 60.14 \small$\pm0.06$ & 48.26 \small$\pm0.23$ & 34.80 \small$\pm0.59$ & 39.05 \small$\pm0.09$ & 80.30 \small$\pm0.08$ & 85.66 \small$\pm0.28$ & 40.24 \small$\pm0.66$ & 55.19 \small$\pm0.34$\\
+--------
+results_waffle/waffleclip.csv
+69.54 \small$\pm0.18$ & 75.36 \small$\pm0.08$ & 64.09 \small$\pm0.10$ & 60.71 \small$\pm0.95$ & 42.23 \small$\pm0.05$ & 93.34 \small$\pm0.05$ & 91.87 \small$\pm0.10$ & 53.53 \small$\pm0.32$ & 68.83 \small$\pm0.37$\\
+55.94 \small$\pm0.14$ & 63.37 \small$\pm0.13$ & 52.49 \small$\pm0.13$ & 43.78 \small$\pm0.41$ & 40.68 \small$\pm0.08$ & 83.27 \small$\pm0.17$ & 85.67 \small$\pm0.32$ & 43.04 \small$\pm0.29$ & 58.53 \small$\pm0.24$\\
+53.07 \small$\pm0.18$ & 60.33 \small$\pm0.11$ & 47.53 \small$\pm0.24$ & 30.73 \small$\pm0.78$ & 38.30 \small$\pm0.10$ & 79.83 \small$\pm0.13$ & 84.13 \small$\pm0.19$ & 39.09 \small$\pm0.16$ & 54.13 \small$\pm0.32$\\
+--------
+results_waffle/waffleclip_concepts.csv
+nan \small$\pmnan$ & nan \small$\pmnan$ & 63.39 \small$\pm0.20$ & 60.65 \small$\pm0.63$ & 42.61 \small$\pm0.11$ & 93.65 \small$\pm0.03$ & 94.37 \small$\pm0.07$ & nan \small$\pmnan$ & 70.93 \small$\pmnan$\\
+nan \small$\pmnan$ & nan \small$\pmnan$ & 52.83 \small$\pm0.14$ & 48.12 \small$\pm0.92$ & 41.01 \small$\pm0.08$ & 85.19 \small$\pm0.06$ & 87.46 \small$\pm0.13$ & nan \small$\pmnan$ & 62.92 \small$\pmnan$\\
+nan \small$\pmnan$ & nan \small$\pmnan$ & 48.24 \small$\pm0.15$ & 34.47 \small$\pm0.67$ & 38.87 \small$\pm0.07$ & 81.40 \small$\pm0.07$ & 85.66 \small$\pm0.07$ & nan \small$\pmnan$ & 57.73 \small$\pmnan$\\
+--------
+results_waffle/waffleclip_gpt.csv
+70.04 \small$\pm0.16$ & 75.78 \small$\pm0.09$ & 64.80 \small$\pm0.13$ & 62.32 \small$\pm1.30$ & 43.06 \small$\pm0.05$ & 93.43 \small$\pm0.05$ & 93.13 \small$\pm0.52$ & 55.36 \small$\pm0.33$ & 69.74 \small$\pm0.52$\\
+56.32 \small$\pm0.15$ & 63.75 \small$\pm0.07$ & 53.31 \small$\pm0.18$ & 41.08 \small$\pm1.92$ & 41.62 \small$\pm0.11$ & 83.40 \small$\pm0.14$ & 85.43 \small$\pm0.23$ & 43.80 \small$\pm0.33$ & 58.59 \small$\pm0.70$\\
+53.39 \small$\pm0.07$ & 60.58 \small$\pm0.11$ & 48.50 \small$\pm0.18$ & 30.38 \small$\pm0.73$ & 39.49 \small$\pm0.13$ & 79.57 \small$\pm0.13$ & 84.00 \small$\pm0.41$ & 41.34 \small$\pm0.21$ & 54.66 \small$\pm0.32$\\
+--------
+results_waffle/waffleclip_gpt_concepts.csv
+nan \small$\pmnan$ & nan \small$\pmnan$ & 63.67 \small$\pm0.05$ & 60.94 \small$\pm2.46$ & 43.38 \small$\pm0.09$ & 93.60 \small$\pm0.04$ & 94.31 \small$\pm0.09$ & nan \small$\pmnan$ & 71.18 \small$\pmnan$\\
+nan \small$\pmnan$ & nan \small$\pmnan$ & 53.29 \small$\pm0.24$ & 49.54 \small$\pm0.86$ & 41.89 \small$\pm0.07$ & 84.96 \small$\pm0.04$ & 88.27 \small$\pm0.37$ & nan \small$\pmnan$ & 63.59 \small$\pmnan$\\
+nan \small$\pmnan$ & nan \small$\pmnan$ & 49.01 \small$\pm0.11$ & 34.87 \small$\pm0.89$ & 39.80 \small$\pm0.07$ & 81.32 \small$\pm0.07$ & 85.89 \small$\pm0.17$ & nan \small$\pmnan$ & 58.18 \small$\pmnan$\\
+--------

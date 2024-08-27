@@ -11,10 +11,11 @@ import json
 import numpy as np
 import torch
 from torch.nn import functional as F
-from torchvision.datasets import ImageNet, EuroSAT, Food101, Flowers102, Places365, OxfordIIITPet, DTD, FGVCAircraft, StanfordCars
+from torchvision.datasets import ImageNet, EuroSAT, Food101, Flowers102, Places365, OxfordIIITPet, DTD, FGVCAircraft, StanfordCars, Caltech256,CIFAR100
 import tqdm
 
 from datasets import _transform, CUBDataset
+from tools import CALTECH256_DIR
 
 # List of methods available to use.
 METHODS = [
@@ -51,7 +52,9 @@ DATASETS = [
     'pets', 
     'flowers102', 
     'fgvcaircraft', 
-    'cars'
+    'cars',
+    'caltech256',
+    'cifar100',
 ]
 
 # List of compatible backbones.
@@ -101,6 +104,8 @@ def setup(opt: argparse.Namespace):
     FLOWERS102_DIR = '/root/autodl-tmp/datasets/flowers102' # REPLACE THIS WITH YOUR OWN PATH
     FGVCAIRCRAFT_DIR = '/root/autodl-tmp/datasets/fgvcaircraft' # REPLACE THIS WITH YOUR OWN PATH
     CARS_DIR = '/root/autodl-tmp/datasets/cars' # REPLACE THIS WITH YOUR OWN PATH
+    CALTECH256_DIR = '/root/autodl-tmp/datasets/Caltech256'  # REPLACE THIS WITH YOUR OWN PATH
+    CIFAR100_DIR = '/root/autodl-tmp/datasets/CIFAR100'  # REPLACE THIS WITH YOUR OWN PATH
 
     # PyTorch datasets
     opt.tfms = _transform(opt.image_size)
@@ -186,9 +191,28 @@ def setup(opt: argparse.Namespace):
         dataset = dsclass(opt.data_dir, split='test', transform=opt.tfms, download=True)
         opt.classes_to_load = None
         opt.descriptor_fname = 'descriptors_cars'
+
+    elif opt.dataset == 'caltech256':
+        dsclass = Caltech256
+        opt.data_dir = pathlib.Path(CALTECH256_DIR)
+        dataset = dsclass(opt.data_dir, transform=opt.tfms, download=True)
+        torch.manual_seed(1)
+        train_size = int(0.8 * len(dataset))
+        test_size = len(dataset) - train_size
+        _, test_dataset = random_split(dataset, [train_size, test_size])
+        dataset = test_dataset
+        opt.classes_to_load = None
+        opt.descriptor_fname = 'descriptors_caltech256'
+
+    elif opt.dataset == 'cifar100':
+        dsclass = CIFAR100
+        opt.data_dir = pathlib.Path(CIFAR100_DIR)
+        dataset = dsclass(opt.data_dir, train=False, transform=opt.tfms, download=False)
+        opt.classes_to_load = None
+        opt.descriptor_fname = 'descriptors_cifar100'
     
     if opt.descriptor_fname is not None:
-        opt.descriptor_fname = './descriptors/' + opt.descriptor_fname
+        opt.descriptor_fname = './descriptors/dclip_descriptors_modify/' + opt.descriptor_fname
         
     return opt, dataset
 

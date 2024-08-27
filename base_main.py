@@ -187,4 +187,4 @@ with open(f'results_waffle/{opt.savename}.csv', 'a') as csv_file:
 ### Save model information as pkl.
 if opt.save_model != '':
     os.makedirs('stored_models', exist_ok=True)
-    pickle.dump({'scores_1': scores_1, 'scores_5': scores_5, 'encodings': encodings}, open(f'stored_models/{opt.save_model}_{opt.dataset}.pkl', 'wb'))
+    pickle.dump({'scores_1': scores_1, 'scores_5': scores_5, 'encodings': encodings}, open(f'stored_models/waffle/{opt.save_model}_{opt.dataset}.pkl', 'wb'))

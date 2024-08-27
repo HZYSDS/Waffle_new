@@ -3,19 +3,19 @@ import numpy as np
 import pandas as pd
 
 files = [
-    'results_waffle/baselines.csv',
-    'results_waffle/baselines_concept.csv',
-    'results_waffle/baselines_gpt.csv',
-    'results_waffle/shared_randomized_descriptions.csv',
-    'results_waffle/shared_randomized_descriptions_2xbudget.csv',
-    'results_waffle/swapped_descriptions.csv',
-    'results_waffle/scrambled_descriptions.csv',
-    'results_waffle/randomized_descriptions.csv',
-    'results_waffle/randomized_descriptions_5xbudget.csv',
-    'results_waffle/waffleclip.csv',
-    'results_waffle/waffleclip_concepts.csv',
-    'results_waffle/waffleclip_gpt.csv',
-    'results_waffle/waffleclip_gpt_concepts.csv',
+    'results/baselines.csv',
+    'results/baselines_concept.csv',
+    'results/baselines_gpt.csv',
+    'results/shared_randomized_descriptions.csv',
+    'results/shared_randomized_descriptions_2xbudget.csv',
+    'results/swapped_descriptions.csv',
+    'results/scrambled_descriptions.csv',
+    'results/randomized_descriptions.csv',
+    'results/randomized_descriptions_5xbudget.csv',
+    'results/waffleclip.csv',
+    'results/waffleclip_concepts.csv',
+    'results/waffleclip_gpt.csv',
+    'results/waffleclip_gpt_concepts.csv',
 ]
 
 #%% Extract classification accuracies from files.
@@ -86,3 +86,17 @@ print('\n'.join(table_data))
 
 with open('output_table.txt', 'w') as f:
     f.write('\n'.join(table_data))
+
+    ''' 'results_waffle/baselines.csv',
+        'results_waffle/baselines_concept.csv',
+        'results_waffle/baselines_gpt.csv',
+        'results_waffle/shared_randomized_descriptions.csv',
+        'results_waffle/shared_randomized_descriptions_2xbudget.csv',
+        'results_waffle/swapped_descriptions.csv',
+        'results_waffle/scrambled_descriptions.csv',
+        'results_waffle/randomized_descriptions.csv',
+        'results_waffle/randomized_descriptions_5xbudget.csv',
+        'results_waffle/waffleclip.csv',
+        'results_waffle/waffleclip_concepts.csv',
+        'results_waffle/waffleclip_gpt.csv',
+        'results_waffle/waffleclip_gpt_concepts.csv','''

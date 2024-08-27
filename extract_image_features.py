@@ -31,7 +31,7 @@ opt = parser.parse_args()
 tools.seed_everything(1)
 
 
-def load_dataset(name, os=None):
+def load_dataset(name):
     opt.image_size = 224
     if opt.model_size == 'ViT-L/14@336px' and opt.image_size != 336:
         print(f'Model size is {opt.model_size} but image size is {opt.image_size}. Setting image size to 336.')

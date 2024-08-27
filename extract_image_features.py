@@ -14,6 +14,7 @@ from torch.utils.data import random_split
 
 import clip
 import tools
+import os
 
 torch.multiprocessing.set_sharing_strategy('file_system')
 
@@ -166,6 +167,9 @@ def main():
     data_loader = DataLoader(dataset, batch_size=opt.batch_size, shuffle=False, num_workers=16)
 
     class_features = extract_features(device, model, data_loader, class_names)
+
+    output_dir = f"precomputed_image_features/{model_size}"
+    os.makedirs(output_dir, exist_ok=True)
 
     output_file = f"precomputed_image_features/{model_size}/{opt.dataset}.pkl"
     with open(output_file, 'wb') as f:

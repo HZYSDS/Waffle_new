@@ -93,7 +93,8 @@ def load_dataset(name):
 
         dataset = dsclass(str(opt.data_dir) + '/train/', transform=transform, download=False)
     elif name == 'places365':
-        dataset = Places365(root=tools.PLACES365_DIR, split='train-standard', small=True, transform=transform)
+        #dataset = Places365(root=tools.PLACES365_DIR, split='train-standard', small=True, transform=transform)
+        dataset = Places365(root=os.path.join(tools.PLACES365_DIR,'a'), split='train-standard', small=True, transform=transform)
     elif name == 'pets':
         dataset = OxfordIIITPet(root=tools.PETS_DIR, split='trainval', transform=transform)
     elif name == 'food101':

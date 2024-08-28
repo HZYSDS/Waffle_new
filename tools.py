@@ -60,6 +60,8 @@ BACKBONES = [
     'ViT-L/14',
 ]
 
+
+PRECOMPUTED_IMAGE_FEATURES = '/root/autodl-tmp/'
 IMAGENET_DIR = '/root/autodl-tmp/datasets/ImageNet2012'  # REPLACE THIS WITH YOUR OWN PATH
 IMAGENETV2_DIR = '/root/autodl-tmp/datasets/ImageNetV2'  # REPLACE THIS WITH YOUR OWN PATH
 CALTECH256_DIR = '/root/autodl-tmp/datasets/Caltech256' # REPLACE THIS WITH YOUR OWN PATH

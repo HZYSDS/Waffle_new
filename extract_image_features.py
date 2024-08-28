@@ -170,15 +170,15 @@ def main():
 
     class_features = extract_features(device, model, data_loader, class_names)
 
-    output_dir = f"precomputed_image_features/{model_size}"
+    output_dir = f"{tools.PRECOMPUTED_IMAGE_FEATURES}/precomputed_image_features/{model_size}"
     os.makedirs(output_dir, exist_ok=True)
 
-    output_file = f"precomputed_image_features/{model_size}/{opt.dataset}.pkl"
+    output_file = f"{tools.PRECOMPUTED_IMAGE_FEATURES}/precomputed_image_features/{model_size}/{opt.dataset}.pkl"
     with open(output_file, 'wb') as f:
         pickle.dump(class_features, f)
 
     if opt.dataset == 'imagenet':  # duplicate
-        output_file = f"precomputed_image_features/{model_size}/imagenetv2.pkl"
+        output_file = f"{tools.PRECOMPUTED_IMAGE_FEATURES}/precomputed_image_features/{model_size}/imagenetv2.pkl"
         with open(output_file, 'wb') as f:
             pickle.dump(class_features, f)
 

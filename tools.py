@@ -13,11 +13,10 @@ import json
 import torch
 
 from torch.nn import functional as F
+from torch.utils.data import random_split
 from torchvision.datasets import ImageNet, EuroSAT, Food101, Caltech256, CIFAR100, Flowers102, Places365, OxfordIIITPet, DTD, FGVCAircraft, StanfordCars
 
-
-
-
+from datasets import _transform, CUBDataset
 
 # Methods
 METHODS = {

@@ -79,11 +79,12 @@ model.eval()
 model.requires_grad_(False)
 
 # %% Compute image embeddings if not already precomputed.
-precomputed_encs_folder = 'precomputed_encs'
+precomputed_encs_folder = 'root/autodl-tmp/precomputed_image_features'
+
 os.makedirs(precomputed_encs_folder, exist_ok=True)
 precomputed_encs_file = os.path.join(
     precomputed_encs_folder,
-    f'{opt.dataset}_{opt.model_size.lower().replace("/", "")}.pkl'
+    f'{opt.model_size.replace("/", "-")}/{opt.dataset}.pkl'
 )
 
 if os.path.exists(precomputed_encs_file):
@@ -205,9 +206,9 @@ print('All Top-5 Accs: {0}'.format(' | '.join('{0:3.2f}%'.format(x) for x in acc
 import sys
 import csv
 
-os.makedirs('results', exist_ok=True)
+os.makedirs('results_modify1', exist_ok=True)
 savename = '; '.join(x.replace('--', '') for x in sys.argv[1:])
-with open(f'results/{opt.savename}.csv', 'a') as csv_file:
+with open(f'results_modify1/{opt.savename}.csv', 'a') as csv_file:
     writer = csv.writer(csv_file)
     writer.writerow(
         [savename, np.mean(accs1), np.std(accs1), np.max(accs1), np.min(accs1), np.mean(accs5), np.std(accs5),

@@ -45,10 +45,10 @@ do
         #     python filter_descriptors.py --dataset=${dataset} --k=${k} --shot=${shot} --seed=${seed} --loaddir=comparative_descriptors --savedir=filtered_descriptors --model_size=${model_size}
         # done
 
-        python base_main.py --savename=${savename} --dataset=${dataset} --k=${k} --shot=${shot} --mode=filtered --reps=5 --model_size=${model_size}
+        python base_main_new.py --savename=${savename} --dataset=${dataset} --k=${k} --shot=${shot} --mode=filtered --reps=5 --model_size=${model_size}
 
         if [[ -n $concept ]]; then
-            python base_main.py --savename=${savename} --dataset=${dataset} --k=${k} --shot=${shot} --mode=filtered --reps=5 --model_size=${model_size} --label_before_text="A photo of a ${concept}: a "
+            python base_main_new.py --savename=${savename} --dataset=${dataset} --k=${k} --shot=${shot} --mode=filtered --reps=5 --model_size=${model_size} --label_before_text="A photo of a ${concept}: a "
         fi
     done
 done

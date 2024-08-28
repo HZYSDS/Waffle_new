@@ -18,8 +18,8 @@ do
     #     wait
     # done
 
-    python base_main.py --savename=${savename} --dataset=${dataset} --k=${k} --mode=random_selection_dclip --reps=5 --model_size=${backbone}
-    python base_main.py --savename=${savename} --dataset=${dataset} --k=${k} --mode=random_selection_comparative --reps=5 --model_size=${backbone}
+    python base_main_new.py --savename=${savename} --dataset=${dataset} --k=${k} --mode=random_selection_dclip --reps=5 --model_size=${backbone}
+    python base_main_new.py --savename=${savename} --dataset=${dataset} --k=${k} --mode=random_selection_comparative --reps=5 --model_size=${backbone}
 done
 
 ##### filtering
@@ -35,6 +35,6 @@ do
     #     wait
     # done
 
-    python base_main.py --savename=${savename} --dataset=${dataset} --k=${k} --shot=${shot} --mode=filtered_dclip --reps=5 --model_size=${backbone}
-    python base_main.py --savename=${savename} --dataset=${dataset} --k=${k} --shot=${shot} --mode=filtered_equal_number --reps=5 --model_size=${backbone}
+    python base_main_new.py --savename=${savename} --dataset=${dataset} --k=${k} --shot=${shot} --mode=filtered_dclip --reps=5 --model_size=${backbone}
+    python base_main_new.py --savename=${savename} --dataset=${dataset} --k=${k} --shot=${shot} --mode=filtered_equal_number --reps=5 --model_size=${backbone}
 done

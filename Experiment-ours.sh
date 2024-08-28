@@ -10,15 +10,15 @@ do
         dataset=${datasets[$i]}
         concept=${concepts[$i]}
 
-        python base_main.py --savename=${savename} --dataset=${dataset} --mode=comparative --model_size=${model_size}
+        python base_main_new.py --savename=${savename} --dataset=${dataset} --mode=comparative --model_size=${model_size}
 
         if [[ -n $concept ]]; then
-            python base_main.py --savename=${savename} --dataset=${dataset} --mode=comparative --model_size=${model_size} --label_before_text="A photo of a ${concept}: a "
+            python base_main_new.py --savename=${savename} --dataset=${dataset} --mode=comparative --model_size=${model_size} --label_before_text="A photo of a ${concept}: a "
         fi
     done
 
     # comparative + filtering
-    for ((i=0; i<${#datasets[@]}; i++));
+'''    for ((i=0; i<${#datasets[@]}; i++));
     do
         dataset=${datasets[$i]}
         concept=${concepts[$i]}
@@ -50,5 +50,5 @@ do
         if [[ -n $concept ]]; then
             python base_main_new.py --savename=${savename} --dataset=${dataset} --k=${k} --shot=${shot} --mode=filtered --reps=5 --model_size=${model_size} --label_before_text="A photo of a ${concept}: a "
         fi
-    done
+    done'''
 done

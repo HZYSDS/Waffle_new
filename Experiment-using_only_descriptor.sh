@@ -9,6 +9,6 @@ for ((i=0; i<${#datasets[@]}; i++));
 do
     dataset=${datasets[$i]}
 
-    python base_main.py --savename=${savename} --dataset=${dataset} --mode=dclip --model_size=${backbone}
-    python base_main.py --savename=${savename} --dataset=${dataset} --mode=comparative --model_size=${backbone}
+    python base_main_new.py --savename=${savename} --dataset=${dataset} --mode=dclip --model_size=${backbone}
+    python base_main_new.py --savename=${savename} --dataset=${dataset} --mode=comparative --model_size=${backbone}
 done

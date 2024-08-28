@@ -218,7 +218,7 @@ def setup(opt: argparse.Namespace):
         model_size = opt.model_size.replace('/', '-')
 
         if opt.mode == 'dclip':
-            opt.descriptor_fname = f'{descriptors_path}/dclip_descriptors/' + opt.descriptor_fname
+            opt.descriptor_fname = f'{descriptors_path}/dclip_descriptors_modify/' + opt.descriptor_fname
         elif opt.mode == 'filtered_dclip':
             opt.descriptor_fname = f'{descriptors_path}/filtered_dclip_descriptors/{model_size}/' + opt.descriptor_fname
         elif opt.mode == 'comparative':
@@ -232,7 +232,7 @@ def setup(opt: argparse.Namespace):
         elif opt.mode == 'random_selection_comparative':
             opt.descriptor_fname = f'{descriptors_path}/random_comparative_descriptors/' + opt.descriptor_fname
         else:
-            opt.descriptor_fname = f'{descriptors_path}/dclip_descriptors/' + opt.descriptor_fname
+            opt.descriptor_fname = f'{descriptors_path}/dclip_descriptors_modify/' + opt.descriptor_fname
 
     return opt, dataset
 

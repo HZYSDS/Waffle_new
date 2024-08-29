@@ -138,8 +138,8 @@ accs1 = []
 accs5 = []
 #accuracy_metric = torchmetrics.Accuracy(task='multiclass', num_classes=num_classes).to(device)
 #accuracy_metric_top5 = torchmetrics.Accuracy(task='multiclass', num_classes=num_classes, top_k=5).to(device)
-accuracy_metric = torchmetrics.Accuracy(task='multiclass', num_classes=num_classes).to(device)
-accuracy_metric_top5 = torchmetrics.Accuracy(task='multiclass', num_classes=num_classes, top_k=5).to(device)
+accuracy_metric = torchmetrics.Accuracy(num_classes=num_classes).to(device)
+accuracy_metric_top5 = torchmetrics.Accuracy(num_classes=num_classes, top_k=5).to(device)
 
 filter_modes = ['filtered', 'filtered_dclip', 'filtered_equal_number', 'random_selection_dclip',
                 'random_selection_comparative']

@@ -104,8 +104,8 @@ def setup(opt: argparse.Namespace):
     FLOWERS102_DIR = '/root/autodl-tmp/datasets/flowers102' # REPLACE THIS WITH YOUR OWN PATH
     FGVCAIRCRAFT_DIR = '/root/autodl-tmp/datasets/fgvcaircraft' # REPLACE THIS WITH YOUR OWN PATH
     CARS_DIR = '/root/autodl-tmp/datasets/cars' # REPLACE THIS WITH YOUR OWN PATH
-    #CALTECH256_DIR = '/root/autodl-tmp/datasets/Caltech256'  # REPLACE THIS WITH YOUR OWN PATH
-    #CIFAR100_DIR = '/root/autodl-tmp/datasets/CIFAR100'  # REPLACE THIS WITH YOUR OWN PATH
+    CALTECH256_DIR = '/root/autodl-tmp/datasets/Caltech256'  # REPLACE THIS WITH YOUR OWN PATH
+    CIFAR100_DIR = '/root/autodl-tmp/datasets/CIFAR100'  # REPLACE THIS WITH YOUR OWN PATH
 
     # PyTorch datasets
     opt.tfms = _transform(opt.image_size)
@@ -192,7 +192,7 @@ def setup(opt: argparse.Namespace):
         opt.classes_to_load = None
         opt.descriptor_fname = 'descriptors_cars'
 
-    ''' lif opt.dataset == 'caltech256':
+    elif opt.dataset == 'caltech256':
         dsclass = Caltech256
         opt.data_dir = pathlib.Path(CALTECH256_DIR)
         dataset = dsclass(opt.data_dir, transform=opt.tfms, download=True)
@@ -209,7 +209,7 @@ def setup(opt: argparse.Namespace):
         opt.data_dir = pathlib.Path(CIFAR100_DIR)
         dataset = dsclass(opt.data_dir, train=False, transform=opt.tfms, download=False)
         opt.classes_to_load = None
-        opt.descriptor_fname = 'descriptors_cifar100' '''
+        opt.descriptor_fname = 'descriptors_cifar100'
 
     if opt.descriptor_fname is not None:
         opt.descriptor_fname = './descriptors/dclip_descriptors_modify/' + opt.descriptor_fname

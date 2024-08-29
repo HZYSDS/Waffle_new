@@ -1,6 +1,6 @@
 source params.sh
 
-savename="ours"
+
 
 for model_size in "${backbones[@]}";
 do
@@ -9,10 +9,11 @@ do
     do
         dataset=${datasets[$i]}
         concept=${concepts[$i]}
-
+        savename="ours"
         python base_main_new.py --savename=${savename} --dataset=${dataset} --mode=comparative --model_size=${model_size}
 
         if [[ -n $concept ]]; then
+            savename="ours_concept"
             python base_main_new.py --savename=${savename} --dataset=${dataset} --mode=comparative --model_size=${model_size} --label_before_text="A photo of a ${concept}: a "
         fi
     done
@@ -44,10 +45,11 @@ do
         # do
         #     python filter_descriptors.py --dataset=${dataset} --k=${k} --shot=${shot} --seed=${seed} --loaddir=comparative_descriptors --savedir=filtered_descriptors --model_size=${model_size}
         # done
-
+        savename="ours_filtered"
         python base_main_new.py --savename=${savename} --dataset=${dataset} --k=${k} --shot=${shot} --mode=filtered --reps=5 --model_size=${model_size}
 
         if [[ -n $concept ]]; then
+            savename="ours_filtered_concept"
             python base_main_new.py --savename=${savename} --dataset=${dataset} --k=${k} --shot=${shot} --mode=filtered --reps=5 --model_size=${model_size} --label_before_text="A photo of a ${concept}: a "
         fi
     done

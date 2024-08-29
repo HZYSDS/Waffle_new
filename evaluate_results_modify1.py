@@ -6,8 +6,8 @@ import re
 files = [
     'results_modify1/ours.csv',
     'results_modify1/ours_concept.csv',
-    'results_modify1/ours_filtered',
-    'results_modify1/ours_filtered_concept',
+    'results_modify1/ours_filtered.csv',
+    'results_modify1/ours_filtered_concept.csv',
 ]
 
 # %% Extract classification accuracies from files.
@@ -18,7 +18,7 @@ for file in files:
 
     # Per Dataset Context
     # datasets = np.array(['flowers102', 'fgvcaircraft', 'cars'])
-    datasets = np.array(['imagenetv2', 'imagenet', 'cub', 'eurosat', 'places365', 'food101', 'pets', 'dtd', 'flowers102', 'fgvcaircraft', 'caltech256', 'cifar100'])
+    datasets = np.array(['imagenetv2', 'imagenet', 'cub', 'eurosat', 'places365', 'food101', 'pets', 'dtd', 'flowers102','cars', 'fgvcaircraft', 'caltech256', 'cifar100'])
     fixed_cols = []
     resp_dataset = []
     resp_dataset_row_idcs = []

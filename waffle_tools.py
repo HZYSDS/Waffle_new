@@ -13,6 +13,7 @@ import torch
 from torch.nn import functional as F
 from torchvision.datasets import ImageNet, EuroSAT, Food101, Flowers102, Places365, OxfordIIITPet, DTD, FGVCAircraft, StanfordCars, Caltech256,CIFAR100
 import tqdm
+from torch.utils.data import random_split
 
 from datasets import _transform, CUBDataset
 from tools import CALTECH256_DIR

@@ -84,7 +84,7 @@ precomputed_encs_folder = 'precomputed_encs'
 os.makedirs(precomputed_encs_folder, exist_ok=True)
 precomputed_encs_file = os.path.join(
     precomputed_encs_folder,
-    f'{opt.model_size.replace("/", "-")}/{opt.dataset}.pkl'
+    f'{opt.dataset}_{opt.model_size.replace("/", "")}.pkl'
 )
 
 if os.path.exists(precomputed_encs_file):

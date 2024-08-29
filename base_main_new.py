@@ -136,6 +136,8 @@ num_classes = num_classes_dict[opt.dataset]
 
 accs1 = []
 accs5 = []
+#accuracy_metric = torchmetrics.Accuracy(task='multiclass', num_classes=num_classes).to(device)
+#accuracy_metric_top5 = torchmetrics.Accuracy(task='multiclass', num_classes=num_classes, top_k=5).to(device)
 accuracy_metric = torchmetrics.Accuracy(task='multiclass', num_classes=num_classes).to(device)
 accuracy_metric_top5 = torchmetrics.Accuracy(task='multiclass', num_classes=num_classes, top_k=5).to(device)
 

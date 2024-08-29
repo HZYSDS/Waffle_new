@@ -208,7 +208,7 @@ def setup(opt: argparse.Namespace):
     elif opt.dataset == 'cars':
         dsclass = StanfordCars
         opt.data_dir = pathlib.Path(CARS_DIR)
-        dataset = dsclass(opt.data_dir, split='test', transform=opt.tfms, download=True)
+        dataset = dsclass(opt.data_dir, split='test', transform=opt.tfms, download=False)
         opt.classes_to_load = None
         opt.descriptor_fname = 'descriptors_cars'
 

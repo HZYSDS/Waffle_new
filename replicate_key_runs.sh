@@ -9,6 +9,11 @@ python base_main.py --savename='baselines' --dataset=places365 --mode=clip --mod
 python base_main.py --savename='baselines' --dataset=food101 --mode=clip --model_size=ViT-L/14
 python base_main.py --savename='baselines' --dataset=pets --mode=clip --model_size=ViT-L/14
 python base_main.py --savename='baselines' --dataset=dtd --mode=clip --model_size=ViT-L/14
+python base_main.py --savename='baselines' --dataset=flowers102 --mode=clip --model_size=ViT-L/14
+python base_main.py --savename='baselines' --dataset=fgvcaircraft --mode=clip --model_size=ViT-L/14
+python base_main.py --savename='baselines' --dataset=cars --mode=clip --model_size=ViT-L/14
+python base_main.py --savename='baselines' --dataset=caltech256 --mode=clip --model_size=ViT-L/14
+python base_main.py --savename='baselines' --dataset=cifar100 --mode=clip --model_size=ViT-L/14
 #python base_main.py --savename='baselines' --dataset=caltech256 --mode=clip --model_size=ViT-L/14
 #python base_main.py --savename='baselines' --dataset=cifar100 --mode=clip --model_size=ViT-L/14
 

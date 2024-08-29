@@ -79,7 +79,7 @@ model.eval()
 model.requires_grad_(False)
 
 # %% Compute image embeddings if not already precomputed.
-precomputed_encs_folder = '/root/autodl-tmp/precomputed_image_features'
+precomputed_encs_folder = 'precomputed_encs'
 
 os.makedirs(precomputed_encs_folder, exist_ok=True)
 precomputed_encs_file = os.path.join(

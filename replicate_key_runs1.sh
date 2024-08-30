@@ -50,11 +50,11 @@ python base_main.py --savename='baselines_gpt' --dataset=places365 --mode=gpt_de
 python base_main.py --savename='baselines_gpt' --dataset=food101 --mode=gpt_descriptions --model_size=ViT-L/14
 python base_main.py --savename='baselines_gpt' --dataset=pets --mode=gpt_descriptions --model_size=ViT-L/14
 python base_main.py --savename='baselines_gpt' --dataset=dtd --mode=gpt_descriptions --model_size=ViT-L/14
-python base_main.py --savename='baselines_gpt' --dataset=flowers102 --mode=clip --model_size=ViT-L/14
-python base_main.py --savename='baselines_gpt' --dataset=fgvcaircraft --mode=clip --model_size=ViT-L/14
-python base_main.py --savename='baselines_gpt' --dataset=cars --mode=clip --model_size=ViT-L/14
-python base_main.py --savename='baselines_gpt' --dataset=cifar100 --mode=clip --model_size=ViT-L/14
-python base_main.py --savename='baselines_gpt' --dataset=caltech256 --mode=clip --model_size=ViT-L/14
+python base_main.py --savename='baselines_gpt' --dataset=flowers102 --mode=gpt_descriptions --model_size=ViT-L/14
+python base_main.py --savename='baselines_gpt' --dataset=fgvcaircraft --mode=gpt_descriptions --model_size=ViT-L/14
+python base_main.py --savename='baselines_gpt' --dataset=cars --mode=gpt_descriptions --model_size=ViT-L/14
+python base_main.py --savename='baselines_gpt' --dataset=cifar100 --mode=gpt_descriptions --model_size=ViT-L/14
+python base_main.py --savename='baselines_gpt' --dataset=caltech256 --mode=gpt_descriptions --model_size=ViT-L/14
 
 python base_main.py --savename='baselines_gpt' --dataset=imagenetv2 --mode=gpt_descriptions --model_size=ViT-B/32
 python base_main.py --savename='baselines_gpt' --dataset=imagenet --mode=gpt_descriptions --model_size=ViT-B/32
@@ -64,11 +64,11 @@ python base_main.py --savename='baselines_gpt' --dataset=places365 --mode=gpt_de
 python base_main.py --savename='baselines_gpt' --dataset=food101 --mode=gpt_descriptions --model_size=ViT-B/32
 python base_main.py --savename='baselines_gpt' --dataset=pets --mode=gpt_descriptions --model_size=ViT-B/32
 python base_main.py --savename='baselines_gpt' --dataset=dtd --mode=gpt_descriptions --model_size=ViT-B/32
-python base_main.py --savename='baselines_gpt' --dataset=flowers102 --mode=clip --model_size=ViT-B/32
-python base_main.py --savename='baselines_gpt' --dataset=fgvcaircraft --mode=clip --model_size=ViT-B/32
-python base_main.py --savename='baselines_gpt' --dataset=cars --mode=clip --model_size=ViT-B/32
-python base_main.py --savename='baselines_gpt' --dataset=cifar100 --mode=clip --model_size=ViT-B/32
-python base_main.py --savename='baselines_gpt' --dataset=caltech256 --mode=clip --model_size=ViT-B/32
+python base_main.py --savename='baselines_gpt' --dataset=flowers102 --mode=gpt_descriptions --model_size=ViT-B/32
+python base_main.py --savename='baselines_gpt' --dataset=fgvcaircraft --mode=gpt_descriptions --model_size=ViT-B/32
+python base_main.py --savename='baselines_gpt' --dataset=cars --mode=gpt_descriptions --model_size=ViT-B/32
+python base_main.py --savename='baselines_gpt' --dataset=cifar100 --mode=gpt_descriptions --model_size=ViT-B/32
+python base_main.py --savename='baselines_gpt' --dataset=caltech256 --mode=gpt_descriptions --model_size=ViT-B/32
 
 python base_main.py --savename='baselines_gpt' --dataset=imagenetv2 --mode=gpt_descriptions --model_size=RN50
 python base_main.py --savename='baselines_gpt' --dataset=imagenet --mode=gpt_descriptions --model_size=RN50
@@ -78,11 +78,11 @@ python base_main.py --savename='baselines_gpt' --dataset=places365 --mode=gpt_de
 python base_main.py --savename='baselines_gpt' --dataset=food101 --mode=gpt_descriptions --model_size=RN50
 python base_main.py --savename='baselines_gpt' --dataset=pets --mode=gpt_descriptions --model_size=RN50
 python base_main.py --savename='baselines_gpt' --dataset=dtd --mode=gpt_descriptions --model_size=RN50
-python base_main.py --savename='baselines_gpt' --dataset=flowers102 --mode=clip --model_size=RN50
-python base_main.py --savename='baselines_gpt' --dataset=fgvcaircraft --mode=clip --model_size=RN50
-python base_main.py --savename='baselines_gpt' --dataset=cars --mode=clip --model_size=RN50
-python base_main.py --savename='baselines_gpt' --dataset=cifar100 --mode=clip --model_size=RN50
-python base_main.py --savename='baselines_gpt' --dataset=caltech256 --mode=clip --model_size=RN50
+python base_main.py --savename='baselines_gpt' --dataset=flowers102 --mode=gpt_descriptions --model_size=RN50
+python base_main.py --savename='baselines_gpt' --dataset=fgvcaircraft --mode=gpt_descriptions --model_size=RN50
+python base_main.py --savename='baselines_gpt' --dataset=cars --mode=gpt_descriptions --model_size=RN50
+python base_main.py --savename='baselines_gpt' --dataset=cifar100 --mode=gpt_descriptions --model_size=RN50
+python base_main.py --savename='baselines_gpt' --dataset=caltech256 --mode=gpt_descriptions --model_size=RN50
 
 ######## WaffleCLIP
 python base_main.py --savename='waffleclip' --dataset=imagenetv2 --mode=waffle --waffle_count=15 --reps=7 --model_size=ViT-L/14

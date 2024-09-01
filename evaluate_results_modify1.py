@@ -4,10 +4,10 @@ import pandas as pd
 import re
 
 files = [
-    'results_modify1/ours.csv',
-    'results_modify1/ours_concept.csv',
-    'results_modify1/ours_filtered.csv',
-    'results_modify1/ours_filtered_concept.csv',
+    'results_modify3/ours.csv',
+    'results_modify3/ours_concept.csv',
+    'results_modify3/ours_filtered.csv',
+    'results_modify3/ours_filtered_concept.csv',
 ]
 
 # %% Extract classification accuracies from files.

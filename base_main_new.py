@@ -208,9 +208,9 @@ print('All Top-5 Accs: {0}'.format(' | '.join('{0:3.2f}%'.format(x) for x in acc
 import sys
 import csv
 
-os.makedirs('results_filter_existing_method', exist_ok=True)
+os.makedirs('results_equal_number', exist_ok=True)
 savename = '; '.join(x.replace('--', '') for x in sys.argv[1:])
-with open(f'results_filter_existing_method/{opt.savename}.csv', 'a') as csv_file:
+with open(f'results_equal_number/{opt.savename}.csv', 'a') as csv_file:
     writer = csv.writer(csv_file)
     writer.writerow(
         [savename, np.mean(accs1), np.std(accs1), np.max(accs1), np.min(accs1), np.mean(accs5), np.std(accs5),

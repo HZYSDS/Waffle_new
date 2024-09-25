@@ -1,0 +1,1001 @@
+Class Name,Accuracy
+tench,97.14285714285714
+goldfish,80.0
+great white shark,52.857142857142854
+tiger shark,30.0
+hammerhead shark,50.0
+electric ray,60.0
+stingray,50.0
+rooster,61.42857142857143
+hen,80.0
+ostrich,80.0
+brambling,90.0
+goldfinch,100.0
+house finch,50.0
+junco,100.0
+indigo bunting,80.0
+American robin,80.0
+bulbul,61.42857142857143
+jay,55.714285714285715
+magpie,80.0
+chickadee,80.0
+American dipper,80.0
+kite (bird of prey),90.0
+bald eagle,84.28571428571429
+vulture,30.0
+great grey owl,100.0
+fire salamander,80.0
+smooth newt,60.0
+eft,0.0
+spotted salamander,70.0
+axolotl,77.14285714285714
+American bullfrog,80.0
+tree frog,50.0
+tailed frog,37.142857142857146
+loggerhead sea turtle,60.0
+leatherback sea turtle,60.0
+mud turtle,40.0
+terrapin,70.0
+box turtle,70.0
+banded gecko,78.57142857142857
+green iguana,30.0
+Carolina anole,50.0
+desert grassland whiptail lizard,50.0
+agama,60.0
+frilled-necked lizard,55.714285714285715
+alligator lizard,17.142857142857142
+Gila monster,51.42857142857143
+European green lizard,30.0
+chameleon,60.0
+Komodo dragon,50.0
+Nile crocodile,70.0
+American alligator,70.0
+triceratops,70.0
+worm snake,20.0
+ring-necked snake,40.0
+eastern hog-nosed snake,40.0
+smooth green snake,30.0
+kingsnake,20.0
+garter snake,48.57142857142857
+water snake,40.0
+vine snake,1.4285714285714286
+night snake,0.0
+boa constrictor,50.0
+African rock python,38.57142857142857
+Indian cobra,55.714285714285715
+green mamba,60.0
+sea snake,100.0
+Saharan horned viper,51.42857142857143
+eastern diamondback rattlesnake,41.42857142857143
+sidewinder rattlesnake,25.714285714285715
+trilobite,45.714285714285715
+harvestman,80.0
+scorpion,70.0
+yellow garden spider,60.0
+barn spider,30.0
+European garden spider,12.857142857142858
+southern black widow,100.0
+tarantula,70.0
+wolf spider,20.0
+tick,60.0
+centipede,88.57142857142857
+black grouse,50.0
+ptarmigan,50.0
+ruffed grouse,50.0
+prairie grouse,70.0
+peafowl,70.0
+quail,70.0
+partridge,68.57142857142857
+african grey parrot,100.0
+macaw,90.0
+sulphur-crested cockatoo,75.71428571428571
+lorikeet,90.0
+coucal,62.857142857142854
+bee eater,90.0
+hornbill,60.0
+hummingbird,61.42857142857143
+jacamar,70.0
+toucan,60.0
+duck,70.0
+red-breasted merganser,92.85714285714286
+goose,50.0
+black swan,90.0
+tusker,24.285714285714285
+echidna,100.0
+platypus,55.714285714285715
+wallaby,90.0
+koala,100.0
+wombat,41.42857142857143
+jellyfish,90.0
+sea anemone,70.0
+brain coral,70.0
+flatworm,20.0
+nematode,60.0
+conch,44.285714285714285
+snail,70.0
+slug,40.0
+sea slug,70.0
+chiton,70.0
+chambered nautilus,70.0
+Dungeness crab,94.28571428571429
+rock crab,47.142857142857146
+fiddler crab,71.42857142857143
+red king crab,60.0
+American lobster,52.857142857142854
+spiny lobster,74.28571428571429
+crayfish,70.0
+hermit crab,68.57142857142857
+isopod,10.0
+white stork,81.42857142857143
+black stork,80.0
+spoonbill,50.0
+flamingo,70.0
+little blue heron,100.0
+great egret,50.0
+bittern bird,40.0
+crane bird,60.0
+limpkin,30.0
+common gallinule,70.0
+American coot,80.0
+bustard,25.714285714285715
+ruddy turnstone,90.0
+dunlin,80.0
+common redshank,75.71428571428571
+dowitcher,80.0
+oystercatcher,80.0
+pelican,90.0
+king penguin,90.0
+albatross,100.0
+grey whale,100.0
+killer whale,80.0
+dugong,70.0
+sea lion,45.714285714285715
+Chihuahua,31.428571428571427
+Japanese Chin,80.0
+Maltese,57.142857142857146
+Pekingese,44.285714285714285
+Shih Tzu,41.42857142857143
+King Charles Spaniel,70.0
+Papillon,57.142857142857146
+toy terrier,28.571428571428573
+Rhodesian Ridgeback,21.428571428571427
+Afghan Hound,80.0
+Basset Hound,70.0
+Beagle,27.142857142857142
+Bloodhound,60.0
+Bluetick Coonhound,50.0
+Black and Tan Coonhound,60.0
+Treeing Walker Coonhound,30.0
+English foxhound,50.0
+Redbone Coonhound,31.428571428571427
+borzoi,60.0
+Irish Wolfhound,60.0
+Italian Greyhound,80.0
+Whippet,57.142857142857146
+Ibizan Hound,20.0
+Norwegian Elkhound,40.0
+Otterhound,40.0
+Saluki,30.0
+Scottish Deerhound,42.857142857142854
+Weimaraner,50.0
+Staffordshire Bull Terrier,50.0
+American Staffordshire Terrier,70.0
+Bedlington Terrier,30.0
+Border Terrier,40.0
+Kerry Blue Terrier,70.0
+Irish Terrier,41.42857142857143
+Norfolk Terrier,30.0
+Norwich Terrier,30.0
+Yorkshire Terrier,15.714285714285714
+Wire Fox Terrier,52.857142857142854
+Lakeland Terrier,50.0
+Sealyham Terrier,55.714285714285715
+Airedale Terrier,40.0
+Cairn Terrier,41.42857142857143
+Australian Terrier,4.285714285714286
+Dandie Dinmont Terrier,40.0
+Boston Terrier,88.57142857142857
+Miniature Schnauzer,40.0
+Giant Schnauzer,20.0
+Standard Schnauzer,10.0
+Scottish Terrier,40.0
+Tibetan Terrier,47.142857142857146
+Australian Silky Terrier,21.428571428571427
+Soft-coated Wheaten Terrier,50.0
+West Highland White Terrier,50.0
+Lhasa Apso,20.0
+Flat-Coated Retriever,75.71428571428571
+Curly-coated Retriever,44.285714285714285
+Golden Retriever,50.0
+Labrador Retriever,70.0
+Chesapeake Bay Retriever,70.0
+German Shorthaired Pointer,20.0
+Vizsla,58.57142857142857
+English Setter,77.14285714285714
+Irish Setter,41.42857142857143
+Gordon Setter,70.0
+Brittany dog,47.142857142857146
+Clumber Spaniel,40.0
+English Springer Spaniel,61.42857142857143
+Welsh Springer Spaniel,72.85714285714286
+Cocker Spaniel,40.0
+Sussex Spaniel,60.0
+Irish Water Spaniel,55.714285714285715
+Kuvasz,11.428571428571429
+Schipperke,45.714285714285715
+Groenendael dog,0.0
+Malinois,61.42857142857143
+Briard,20.0
+Australian Kelpie,31.428571428571427
+Komondor,40.0
+Old English Sheepdog,30.0
+Shetland Sheepdog,57.142857142857146
+collie,10.0
+Border Collie,61.42857142857143
+Bouvier des Flandres dog,0.0
+Rottweiler,45.714285714285715
+German Shepherd Dog,51.42857142857143
+Dobermann,45.714285714285715
+Miniature Pinscher,58.57142857142857
+Greater Swiss Mountain Dog,85.71428571428571
+Bernese Mountain Dog,40.0
+Appenzeller Sennenhund,0.0
+Entlebucher Sennenhund,50.0
+Boxer,10.0
+Bullmastiff,62.857142857142854
+Tibetan Mastiff,90.0
+French Bulldog,57.142857142857146
+Great Dane,4.285714285714286
+St. Bernard,80.0
+husky,14.285714285714286
+Alaskan Malamute,40.0
+Siberian Husky,25.714285714285715
+Dalmatian,70.0
+Affenpinscher,40.0
+Basenji,57.142857142857146
+pug,80.0
+Leonberger,90.0
+Newfoundland dog,60.0
+Great Pyrenees dog,41.42857142857143
+Samoyed,50.0
+Pomeranian,20.0
+Chow Chow,41.42857142857143
+Keeshond,70.0
+brussels griffon,30.0
+Pembroke Welsh Corgi,90.0
+Cardigan Welsh Corgi,31.428571428571427
+Toy Poodle,40.0
+Miniature Poodle,60.0
+Standard Poodle,60.0
+Mexican hairless dog (xoloitzcuintli),41.42857142857143
+grey wolf,50.0
+Alaskan tundra wolf,80.0
+red wolf or maned wolf,60.0
+coyote,90.0
+dingo,67.14285714285714
+dhole,80.0
+African wild dog,80.0
+hyena,100.0
+red fox,78.57142857142857
+kit fox,30.0
+Arctic fox,90.0
+grey fox,50.0
+tabby cat,85.71428571428571
+tiger cat,24.285714285714285
+Persian cat,80.0
+Siamese cat,90.0
+Egyptian Mau,62.857142857142854
+cougar,77.14285714285714
+lynx,100.0
+leopard,78.57142857142857
+snow leopard,90.0
+jaguar,30.0
+lion,90.0
+tiger,78.57142857142857
+cheetah,80.0
+brown bear,90.0
+American black bear,90.0
+polar bear,90.0
+sloth bear,60.0
+mongoose,70.0
+meerkat,90.0
+tiger beetle,92.85714285714286
+ladybug,60.0
+ground beetle,28.571428571428573
+longhorn beetle,58.57142857142857
+leaf beetle,40.0
+dung beetle,70.0
+rhinoceros beetle,85.71428571428571
+weevil,80.0
+fly,78.57142857142857
+bee,80.0
+ant,80.0
+grasshopper,61.42857142857143
+cricket insect,10.0
+stick insect,68.57142857142857
+cockroach,20.0
+praying mantis,40.0
+cicada,90.0
+leafhopper,90.0
+lacewing,60.0
+dragonfly,90.0
+damselfly,100.0
+red admiral butterfly,50.0
+ringlet butterfly,100.0
+monarch butterfly,90.0
+small white butterfly,70.0
+sulphur butterfly,100.0
+gossamer-winged butterfly,11.428571428571429
+starfish,70.0
+sea urchin,30.0
+sea cucumber,48.57142857142857
+cottontail rabbit,80.0
+hare,60.0
+Angora rabbit,100.0
+hamster,90.0
+porcupine,50.0
+fox squirrel,80.0
+marmot,70.0
+beaver,80.0
+guinea pig,100.0
+common sorrel horse,84.28571428571429
+zebra,90.0
+pig,50.0
+wild boar,61.42857142857143
+warthog,30.0
+hippopotamus,70.0
+ox,32.857142857142854
+water buffalo,80.0
+bison,90.0
+ram (adult male sheep),78.57142857142857
+bighorn sheep,90.0
+Alpine ibex,70.0
+hartebeest,80.0
+impala (antelope),100.0
+gazelle,40.0
+arabian camel,71.42857142857143
+llama,94.28571428571429
+weasel,40.0
+mink,60.0
+European polecat,70.0
+black-footed ferret,40.0
+otter,57.142857142857146
+skunk,70.0
+badger,100.0
+armadillo,80.0
+three-toed sloth,65.71428571428571
+orangutan,100.0
+gorilla,80.0
+chimpanzee,72.85714285714286
+gibbon,60.0
+siamang,78.57142857142857
+guenon,40.0
+patas monkey,50.0
+baboon,48.57142857142857
+macaque,17.142857142857142
+langur,32.857142857142854
+black-and-white colobus,70.0
+proboscis monkey,61.42857142857143
+marmoset,50.0
+white-headed capuchin,70.0
+howler monkey,20.0
+titi monkey,30.0
+Geoffroy's spider monkey,48.57142857142857
+common squirrel monkey,100.0
+ring-tailed lemur,80.0
+indri,62.857142857142854
+Asian elephant,100.0
+African bush elephant,11.428571428571429
+red panda,90.0
+giant panda,100.0
+snoek fish,2.857142857142857
+eel,12.857142857142858
+silver salmon,100.0
+rock beauty fish,14.285714285714286
+clownfish,60.0
+sturgeon,50.0
+gar fish,25.714285714285715
+lionfish,80.0
+pufferfish,48.57142857142857
+abacus,90.0
+abaya,50.0
+academic gown,80.0
+accordion,84.28571428571429
+acoustic guitar,60.0
+aircraft carrier,100.0
+airliner,90.0
+airship,80.0
+altar,57.142857142857146
+ambulance,70.0
+amphibious vehicle,48.57142857142857
+analog clock,20.0
+apiary,90.0
+apron,15.714285714285714
+trash can,40.0
+assault rifle,60.0
+backpack,10.0
+bakery,30.0
+balance beam,0.0
+balloon,67.14285714285714
+ballpoint pen,30.0
+Band-Aid,70.0
+banjo,77.14285714285714
+baluster / handrail,38.57142857142857
+barbell,50.0
+barber chair,40.0
+barbershop,82.85714285714286
+barn,90.0
+barometer,70.0
+barrel,60.0
+wheelbarrow,48.57142857142857
+baseball,40.0
+basketball,90.0
+bassinet,71.42857142857143
+bassoon,58.57142857142857
+swimming cap,50.0
+bath towel,30.0
+bathtub,30.0
+station wagon,40.0
+lighthouse,80.0
+beaker,30.0
+military hat (bearskin or shako),52.857142857142854
+beer bottle,50.0
+beer glass,54.285714285714285
+bell tower,10.0
+baby bib,70.0
+tandem bicycle,90.0
+bikini,50.0
+ring binder,60.0
+binoculars,65.71428571428571
+birdhouse,70.0
+boathouse,50.0
+bobsleigh,94.28571428571429
+bolo tie,40.0
+poke bonnet,1.4285714285714286
+bookcase,72.85714285714286
+bookstore,90.0
+bottle cap,41.42857142857143
+hunting bow,50.0
+bow tie,27.142857142857142
+brass memorial plaque,80.0
+bra,0.0
+breakwater,37.142857142857146
+breastplate,7.142857142857143
+broom,20.0
+bucket,70.0
+buckle,10.0
+bulletproof vest,90.0
+high-speed train,90.0
+butcher shop,80.0
+taxicab,84.28571428571429
+cauldron,30.0
+candle,40.0
+cannon,80.0
+canoe,77.14285714285714
+can opener,30.0
+cardigan,70.0
+car mirror,90.0
+carousel,90.0
+tool kit,60.0
+cardboard box / carton,40.0
+car wheel,30.0
+automated teller machine,70.0
+cassette,30.0
+cassette player,28.571428571428573
+castle,80.0
+catamaran,47.142857142857146
+CD player,50.0
+cello,100.0
+mobile phone,55.714285714285715
+chain,27.142857142857142
+chain-link fence,27.142857142857142
+chain mail,10.0
+chainsaw,30.0
+storage chest,10.0
+chiffonier,70.0
+bell or wind chime,30.0
+china cabinet,55.714285714285715
+Christmas stocking,90.0
+church,21.428571428571427
+movie theater,80.0
+cleaver,41.42857142857143
+cliff dwelling,85.71428571428571
+cloak,10.0
+clogs,58.57142857142857
+cocktail shaker,70.0
+coffee mug,20.0
+coffeemaker,10.0
+spiral or coil,68.57142857142857
+combination lock,28.571428571428573
+computer keyboard,20.0
+candy store,70.0
+container ship,80.0
+convertible,61.42857142857143
+corkscrew,47.142857142857146
+cornet,50.0
+cowboy boot,45.714285714285715
+cowboy hat,65.71428571428571
+cradle,10.0
+construction crane,71.42857142857143
+crash helmet,42.857142857142854
+crate,40.0
+infant bed,100.0
+Crock Pot,68.57142857142857
+croquet ball,90.0
+crutch,11.428571428571429
+cuirass,60.0
+dam,52.857142857142854
+desk,50.0
+desktop computer,10.0
+rotary dial telephone,70.0
+diaper,40.0
+digital clock,54.285714285714285
+digital watch,100.0
+dining table,48.57142857142857
+dishcloth,90.0
+dishwasher,52.857142857142854
+disc brake,80.0
+dock,14.285714285714286
+dog sled,100.0
+dome,71.42857142857143
+doormat,70.0
+drilling rig,71.42857142857143
+drum,30.0
+drumstick,0.0
+dumbbell,47.142857142857146
+Dutch oven,55.714285714285715
+electric fan,48.57142857142857
+electric guitar,38.57142857142857
+electric locomotive,72.85714285714286
+entertainment center,50.0
+envelope,31.428571428571427
+espresso machine,22.857142857142858
+face powder,71.42857142857143
+feather boa,40.0
+filing cabinet,71.42857142857143
+fireboat,100.0
+fire truck,100.0
+fire screen,40.0
+flagpole,70.0
+flute,28.571428571428573
+folding chair,34.285714285714285
+football helmet,90.0
+forklift,50.0
+fountain,50.0
+fountain pen,70.0
+four-poster bed,68.57142857142857
+freight car,38.57142857142857
+French horn,30.0
+frying pan,30.0
+fur coat,44.285714285714285
+garbage truck,80.0
+gas mask or respirator,70.0
+gas pump,50.0
+goblet,58.57142857142857
+go-kart,81.42857142857143
+golf ball,40.0
+golf cart,80.0
+gondola,90.0
+gong,60.0
+gown,68.57142857142857
+grand piano,85.71428571428571
+greenhouse,80.0
+radiator grille,0.0
+grocery store,45.714285714285715
+guillotine,80.0
+hair clip,50.0
+hair spray,31.428571428571427
+half-track,95.71428571428571
+hammer,0.0
+hamper,60.0
+hair dryer,30.0
+hand-held computer,11.428571428571429
+handkerchief,32.857142857142854
+hard disk drive,67.14285714285714
+harmonica,70.0
+harp,90.0
+combine harvester,90.0
+hatchet,31.428571428571427
+holster,51.42857142857143
+home theater,62.857142857142854
+honeycomb,32.857142857142854
+hook,0.0
+hoop skirt,50.0
+gymnastic horizontal bar,70.0
+horse-drawn vehicle,68.57142857142857
+hourglass,74.28571428571429
+iPod,42.857142857142854
+clothes iron,62.857142857142854
+carved pumpkin,100.0
+jeans,41.42857142857143
+jeep,60.0
+T-shirt,48.57142857142857
+jigsaw puzzle,88.57142857142857
+rickshaw,74.28571428571429
+joystick,92.85714285714286
+kimono,80.0
+knee pad,70.0
+knot,10.0
+lab coat,40.0
+ladle,20.0
+lampshade,30.0
+laptop computer,60.0
+lawn mower,70.0
+lens cap,38.57142857142857
+letter opener,11.428571428571429
+library,80.0
+lifeboat,100.0
+lighter,35.714285714285715
+limousine,84.28571428571429
+ocean liner,80.0
+lipstick,71.42857142857143
+slip-on shoe,40.0
+lotion,40.0
+music speaker,52.857142857142854
+loupe magnifying glass,30.0
+sawmill,60.0
+magnetic compass,48.57142857142857
+messenger bag,40.0
+mailbox,80.0
+maillot,0.0
+one-piece bathing suit,100.0
+manhole cover,80.0
+maraca,80.0
+marimba,80.0
+mask,44.285714285714285
+matchstick,50.0
+maypole,78.57142857142857
+maze,90.0
+measuring cup,80.0
+medicine cabinet,10.0
+megalith,80.0
+microphone,28.571428571428573
+microwave oven,60.0
+military uniform,51.42857142857143
+milk can,0.0
+minibus,57.142857142857146
+miniskirt,64.28571428571429
+minivan,45.714285714285715
+missile,70.0
+mitten,70.0
+mixing bowl,62.857142857142854
+mobile home,44.285714285714285
+ford model t,80.0
+modem,70.0
+monastery,30.0
+monitor,20.0
+moped,47.142857142857146
+mortar and pestle,60.0
+graduation cap,20.0
+mosque,90.0
+mosquito net,80.0
+vespa,12.857142857142858
+mountain bike,94.28571428571429
+tent,90.0
+computer mouse,20.0
+mousetrap,54.285714285714285
+moving van,50.0
+muzzle,2.857142857142857
+metal nail,0.0
+neck brace,57.142857142857146
+necklace,88.57142857142857
+baby pacifier,25.714285714285715
+notebook computer,0.0
+obelisk,70.0
+oboe,30.0
+ocarina,80.0
+odometer,100.0
+oil filter,34.285714285714285
+pipe organ,77.14285714285714
+oscilloscope,90.0
+overskirt,25.714285714285715
+bullock cart,68.57142857142857
+oxygen mask,50.0
+product packet / packaging,18.571428571428573
+paddle,10.0
+paddle wheel,50.0
+padlock,74.28571428571429
+paintbrush,40.0
+pajamas,40.0
+palace,50.0
+pan flute,50.0
+paper towel,10.0
+parachute,80.0
+parallel bars,1.4285714285714286
+park bench,27.142857142857142
+parking meter,30.0
+railroad car,20.0
+patio,60.0
+payphone,71.42857142857143
+pedestal,11.428571428571429
+pencil case,40.0
+pencil sharpener,4.285714285714286
+perfume,80.0
+Petri dish,70.0
+photocopier,90.0
+plectrum,100.0
+Pickelhaube,20.0
+picket fence,70.0
+pickup truck,68.57142857142857
+pier,20.0
+piggy bank,70.0
+pill bottle,40.0
+pillow,40.0
+ping-pong ball,40.0
+pinwheel,50.0
+pirate ship,80.0
+drink pitcher,1.4285714285714286
+block plane,60.0
+planetarium,50.0
+plastic bag,50.0
+plate rack,30.0
+farm plow,18.571428571428573
+plunger,20.0
+Polaroid camera,70.0
+pole,27.142857142857142
+police van,47.142857142857146
+poncho,51.42857142857143
+pool table,78.57142857142857
+soda bottle,60.0
+plant pot,11.428571428571429
+potter's wheel,58.57142857142857
+power drill,50.0
+prayer rug,60.0
+printer,20.0
+prison,80.0
+projectile,0.0
+projector,31.428571428571427
+hockey puck,70.0
+punching bag,70.0
+purse,10.0
+quill,40.0
+quilt,30.0
+race car,70.0
+racket,70.0
+radiator,27.142857142857142
+radio,22.857142857142858
+radio telescope,100.0
+rain barrel,40.0
+recreational vehicle,100.0
+fishing casting reel,42.857142857142854
+reflex camera,61.42857142857143
+refrigerator,60.0
+remote control,90.0
+restaurant,52.857142857142854
+revolver,68.57142857142857
+rifle,30.0
+rocking chair,48.57142857142857
+rotisserie,80.0
+eraser,50.0
+rugby ball,90.0
+ruler measuring stick,20.0
+sneaker,70.0
+safe,12.857142857142858
+safety pin,20.0
+salt shaker,40.0
+sandal,50.0
+sarong,27.142857142857142
+saxophone,60.0
+scabbard,20.0
+weighing scale,50.0
+school bus,90.0
+schooner,67.14285714285714
+scoreboard,90.0
+CRT monitor,34.285714285714285
+screw,62.857142857142854
+screwdriver,12.857142857142858
+seat belt,48.57142857142857
+sewing machine,60.0
+shield,7.142857142857143
+shoe store,50.0
+shoji screen / room divider,67.14285714285714
+shopping basket,20.0
+shopping cart,68.57142857142857
+shovel,28.571428571428573
+shower cap,80.0
+shower curtain,71.42857142857143
+ski,90.0
+balaclava ski mask,70.0
+sleeping bag,48.57142857142857
+slide rule,52.857142857142854
+sliding door,42.857142857142854
+slot machine,55.714285714285715
+snorkel,60.0
+snowmobile,80.0
+snowplow,95.71428571428571
+soap dispenser,40.0
+soccer ball,90.0
+sock,70.0
+solar thermal collector,32.857142857142854
+sombrero,77.14285714285714
+soup bowl,45.714285714285715
+keyboard space bar,21.428571428571427
+space heater,50.0
+space shuttle,78.57142857142857
+spatula,20.0
+motorboat,60.0
+spider web,72.85714285714286
+spindle,10.0
+sports car,60.0
+spotlight,12.857142857142858
+stage,30.0
+steam locomotive,90.0
+through arch bridge,31.428571428571427
+steel drum,70.0
+stethoscope,80.0
+scarf,54.285714285714285
+stone wall,40.0
+stopwatch,60.0
+stove,32.857142857142854
+strainer,10.0
+tram,60.0
+stretcher,70.0
+couch,60.0
+stupa,90.0
+submarine,42.857142857142854
+suit,42.857142857142854
+sundial,50.0
+sunglass,10.0
+sunglasses,15.714285714285714
+sunscreen,27.142857142857142
+suspension bridge,100.0
+mop,55.714285714285715
+sweatshirt,27.142857142857142
+swim trunks / shorts,85.71428571428571
+swing,90.0
+electrical switch,60.0
+syringe,28.571428571428573
+table lamp,40.0
+tank,60.0
+tape player,40.0
+teapot,80.0
+teddy bear,47.142857142857146
+television,22.857142857142858
+tennis ball,18.571428571428573
+thatched roof,90.0
+front curtain,60.0
+thimble,47.142857142857146
+threshing machine,40.0
+throne,30.0
+tile roof,48.57142857142857
+toaster,10.0
+tobacco shop,75.71428571428571
+toilet seat,40.0
+torch,72.85714285714286
+totem pole,100.0
+tow truck,40.0
+toy store,60.0
+tractor,70.0
+semi-trailer truck,70.0
+tray,40.0
+trench coat,44.285714285714285
+tricycle,68.57142857142857
+trimaran,40.0
+tripod,52.857142857142854
+triumphal arch,72.85714285714286
+trolleybus,87.14285714285714
+trombone,60.0
+hot tub,0.0
+turnstile,81.42857142857143
+typewriter keyboard,80.0
+umbrella,47.142857142857146
+unicycle,60.0
+upright piano,40.0
+vacuum cleaner,55.714285714285715
+vase,47.142857142857146
+vaulted or arched ceiling,40.0
+velvet fabric,10.0
+vending machine,80.0
+vestment,70.0
+viaduct,25.714285714285715
+violin,68.57142857142857
+volleyball,80.0
+waffle iron,30.0
+wall clock,40.0
+wallet,27.142857142857142
+wardrobe,50.0
+military aircraft,55.714285714285715
+sink,50.0
+washing machine,70.0
+water bottle,17.142857142857142
+water jug,32.857142857142854
+water tower,100.0
+whiskey jug,60.0
+whistle,22.857142857142858
+hair wig,70.0
+window screen,20.0
+window shade,40.0
+Windsor tie,20.0
+wine bottle,22.857142857142858
+airplane wing,60.0
+wok,31.428571428571427
+wooden spoon,50.0
+wool,10.0
+split-rail fence,40.0
+shipwreck,54.285714285714285
+sailboat,20.0
+yurt,72.85714285714286
+website,77.14285714285714
+comic book,90.0
+crossword,50.0
+traffic or street sign,58.57142857142857
+traffic light,64.28571428571429
+dust jacket,80.0
+menu,100.0
+plate,8.571428571428571
+guacamole,50.0
+consomme,80.0
+hot pot,80.0
+trifle,100.0
+ice cream,50.0
+popsicle,20.0
+baguette,51.42857142857143
+bagel,40.0
+pretzel,74.28571428571429
+cheeseburger,82.85714285714286
+hot dog,75.71428571428571
+mashed potatoes,40.0
+cabbage,70.0
+broccoli,30.0
+cauliflower,70.0
+zucchini,62.857142857142854
+spaghetti squash,52.857142857142854
+acorn squash,40.0
+butternut squash,50.0
+cucumber,55.714285714285715
+artichoke,60.0
+bell pepper,60.0
+cardoon,31.428571428571427
+mushroom,11.428571428571429
+Granny Smith apple,60.0
+strawberry,60.0
+orange,90.0
+lemon,40.0
+fig,61.42857142857143
+pineapple,70.0
+banana,30.0
+jackfruit,70.0
+cherimoya (custard apple),80.0
+pomegranate,90.0
+hay,60.0
+carbonara,82.85714285714286
+chocolate syrup,60.0
+dough,70.0
+meatloaf,80.0
+pizza,80.0
+pot pie,90.0
+burrito,80.0
+red wine,41.42857142857143
+espresso,70.0
+tea cup,17.142857142857142
+eggnog,72.85714285714286
+mountain,20.0
+bubble,44.285714285714285
+cliff,50.0
+coral reef,65.71428571428571
+geyser,100.0
+lakeshore,41.42857142857143
+promontory,20.0
+sandbar,30.0
+beach,50.0
+valley,45.714285714285715
+volcano,72.85714285714286
+baseball player,77.14285714285714
+bridegroom,80.0
+scuba diver,61.42857142857143
+rapeseed,50.0
+daisy,88.57142857142857
+yellow lady's slipper,100.0
+corn,81.42857142857143
+acorn,34.285714285714285
+rose hip,100.0
+horse chestnut seed,44.285714285714285
+coral fungus,90.0
+agaric,80.0
+gyromitra,52.857142857142854
+stinkhorn mushroom,90.0
+earth star fungus,70.0
+hen of the woods mushroom,100.0
+bolete,50.0
+corn cob,0.0
+toilet paper,40.0

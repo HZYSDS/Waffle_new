@@ -503,6 +503,14 @@ def save_results(savename, results):
     with open(f'results/{savename}_results.json', 'w') as f:
         json.dump(results, f)
 
+def load_dataset(dataset_name, preprocess):
+    if dataset_name == "imagenet":
+        dataset = datasets.ImageNet(root='/path/to/imagenet', split='val', transform=preprocess)
+    elif dataset_name == "pets":
+        dataset = datasets.OxfordIIITPet(root='/path/to/pets', split='test', transform=preprocess)
+    # 根据需要添加更多数据集
+    return dataset
+
 openai_imagenet_classes = ["tench", "goldfish", "great white shark", "tiger shark", "hammerhead shark", "electric ray",
                            "stingray", "rooster", "hen", "ostrich", "brambling", "goldfinch", "house finch", "junco",
                            "indigo bunting", "American robin", "bulbul", "jay", "magpie", "chickadee",

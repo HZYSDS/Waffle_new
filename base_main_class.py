@@ -140,7 +140,7 @@ for class_name, stats in class_accuracy.items():
 
 # %% 保存每个类的准确率到 CSV 文件
 os.makedirs('results', exist_ok=True)
-with open(f'results_class/class_accuracy_{opt.dataset}.csv', mode='w') as file:
+with open(f'results_class/class_accuracy_{opt.savename}_{opt.dataset}.csv', mode='w') as file:
     writer = csv.writer(file)
     writer.writerow(["Class Name", "Accuracy"])
     for class_name, stats in class_accuracy.items():

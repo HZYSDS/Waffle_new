@@ -277,190 +277,6 @@ def modify_descriptor(descriptor: str, apply_changes: bool):
         return make_descriptor_sentence(descriptor)
     return descriptor
 
-
-""" def load_deepseek_descriptions(opt: argparse.Namespace, classes_to_load: List = None, mode: str = 'clip'):
-    ### Prepare extracted descriptions.
-    deepseek_descriptions = load_json(opt.descriptor_fname)
-
-    # Replace empty descriptor lists if necessary.
-    deepseek_descriptions = {key: item if len(item) else [''] for key, item in deepseek_descriptions.items()}
-
-    ### (Lazy - uses deepseek descriptions) Use the default CLIP setup.
-    if not 'label_to_classname' in vars(opt):
-        opt.label_to_classname = list(deepseek_descriptions.keys())
-        opt.n_classes = len(opt.label_to_classname)
-
-    ### (Lazy - uses deepseek descriptions) Use the default CLIP setup.
-    if mode == 'clip':
-        deepseek_descriptions = {l: opt.label_before_text + wordify(l) + opt.label_after_text for l in
-                            opt.label_to_classname}
-
-    # Get complete list of available descriptions.
-    descr_list = [list(values) for values in deepseek_descriptions.values()]
-    descr_list = np.array([x for y in descr_list for x in y])
-
-    # List of available classes.
-    key_list = list(deepseek_descriptions.keys())
-
-    ### Descriptor Makers.
-    structured_descriptor_builder = lambda item,cls: f"{opt.pre_descriptor_text}{opt.label_before_text}{wordify(cls)}{opt.descriptor_separator}{modify_descriptor(item, opt.apply_descriptor_modification)}{opt.label_after_text}" if modify_descriptor(
-        item, opt.apply_descriptor_modification) else f"{opt.pre_descriptor_text}{opt.label_before_text}{wordify(cls)}."
-
-    ### Use description-based CLIP.
-    need_descr_modes = ['dclip', 'comparative', 'filtered', 'filtered_dclip', 'filtered_equal_number',
-                        'random_selection_dclip', 'random_selection_comparative']
-    # need_descr_modes = ['filtered', 'filtered_dclip', 'filtered_equal_number', 'random_selection_dclip', 'random_selection_comparative'] # for Experiment-using_only_descriptor
-
-    if mode in need_descr_modes:
-        deepseek_descriptions = {key: [structured_descriptor_builder(item, key) for item in class_descr_list] for
-                            key, class_descr_list in deepseek_descriptions.items()}
-
-    ### Use DCLIP with randomly assigned characters and words  (every class gets the same random subset).
-    if mode == 'waffle':
-        import pickle as pkl
-        word_list = pkl.load(open('word_list.pkl', 'rb'))
-
-        avg_num_words = int(np.max([np.round(np.mean([len(wordify(x).split(' ')) for x in key_list])), 1]))
-        avg_word_length = int(np.round(np.mean([np.mean([len(y) for y in wordify(x).split(' ')]) for x in key_list])))
-        word_list = [x[:avg_word_length] for x in word_list]
-
-        # (Lazy solution) Extract list of available random characters from deepseek description list. Ideally we utilize a separate list.
-        character_list = [x.split(' ') for x in descr_list]
-        character_list = [x.replace(',', '').replace('.', '') for x in
-                          np.unique([x for y in character_list for x in y])]
-        character_list = np.unique(list(''.join(character_list)))
-
-        num_spaces = int(np.round(np.mean([np.sum(np.array(list(x)) == ' ') for x in key_list]))) + 1
-        num_chars = int(np.ceil(np.mean([np.max([len(y) for y in x.split(' ')]) for x in key_list])))
-
-        num_chars += num_spaces - num_chars % num_spaces
-        sample_key = ''
-
-        for s in range(num_spaces):
-            for _ in range(num_chars // num_spaces):
-                sample_key += 'a'
-            if s < num_spaces - 1:
-                sample_key += ' '
-
-        deepseek_descriptions = {key: [] for key in deepseek_descriptions.keys()}
-
-        for key in key_list:
-            for _ in range(opt.waffle_count):
-                base_word = ''
-                for a in range(avg_num_words):
-                    base_word += np.random.choice(word_list, 1, replace=False)[0]
-                    if a < avg_num_words - 1:
-                        base_word += ' '
-                deepseek_descriptions[key].append(structured_descriptor_builder(base_word, key))
-                noise_word = ''
-                use_key = sample_key if len(key) >= len(sample_key) else key
-                for c in sample_key:
-                    if c != ' ':
-                        noise_word += np.random.choice(character_list, 1, replace=False)[0]
-                    else:
-                        noise_word += ', '
-                deepseek_descriptions[key].append(structured_descriptor_builder(noise_word, key))
-
-        match_key = np.random.choice(key_list)
-        deepseek_descriptions = {key: deepseek_descriptions[match_key] for key in key_list}
-        for key in deepseek_descriptions:
-            deepseek_descriptions[key] = [x.replace(wordify(match_key), wordify(key)) for x in deepseek_descriptions[key]]
-
-    ### Use DCLIP with randomly assigned characters, words and DEEPSEEK Descriptions (every class gets the same random subset, but tretains heir respective class descriptions).
-    ### However, each descriptor set is subsampled to match the required descriptor budget, so per class, descriptors may still vary a bit.
-    if mode == 'waffle_and_deepseek':
-        import pickle as pkl
-        word_list = pkl.load(open('word_list.pkl', 'rb'))
-
-        avg_num_words = int(np.max([np.round(np.mean([len(wordify(x).split(' ')) for x in key_list])), 1]))
-        avg_word_length = int(np.round(np.mean([np.mean([len(y) for y in wordify(x).split(' ')]) for x in key_list])))
-        word_list = [x[:avg_word_length] for x in word_list]
-
-        # (Lazy solution) Extract list of available random characters from deepseek description list. Ideally we utilize a separate list.
-        character_list = [x.split(' ') for x in descr_list]
-        character_list = [x.replace(',', '').replace('.', '') for x in
-                          np.unique([x for y in character_list for x in y])]
-        character_list = np.unique(list(''.join(character_list)))
-
-        num_spaces = int(np.round(np.mean([np.sum(np.array(list(x)) == ' ') for x in key_list]))) + 1
-        num_chars = int(np.ceil(np.mean([np.max([len(y) for y in x.split(' ')]) for x in key_list])))
-        num_chars += num_spaces - num_chars % num_spaces
-
-        sample_key = ''
-        for s in range(num_spaces):
-            for _ in range(num_chars // num_spaces):
-                sample_key += 'a'
-            if s < num_spaces - 1:
-                sample_key += ' '
-
-        base_deepseek_descriptions = {key: items for key, items in deepseek_descriptions.items()}
-        all_descr = [values for values in base_deepseek_descriptions.values()]
-        all_descr = [x for y in all_descr for x in y]
-        deepseek_descriptions = {key: [] for key in deepseek_descriptions.keys()}
-
-        effective_waffle_count = int(2 / 3 * opt.waffle_count)
-
-        for key in key_list:
-            for sc in range(effective_waffle_count):
-                base_word = ''
-                for a in range(avg_num_words):
-                    base_word += np.random.choice(word_list, 1, replace=False)[0]
-                    if a < avg_num_words - 1:
-                        base_word += ' '
-                deepseek_descriptions[key].append(structured_descriptor_builder(base_word, key))
-                noise_word = ''
-                for c in sample_key:
-                    if c != ' ':
-                        noise_word += np.random.choice(character_list, 1, replace=False)[0]
-                    else:
-                        noise_word += ', '
-                deepseek_descriptions[key].append(structured_descriptor_builder(noise_word, key))
-
-        match_key = np.random.choice(key_list)
-        deepseek_descriptions = {key: deepseek_descriptions[match_key] for key in key_list}
-        for key in deepseek_descriptions:
-            deepseek_descriptions[key] = [x.replace(wordify(match_key), wordify(key)) for x in deepseek_descriptions[key]]
-
-        # For every random character and word descriptor pair, we add a DEEPSEEK descriptor
-        # sampled from the list of available descriptors.
-        for key in key_list:
-            for sc in range(effective_waffle_count):
-                word = np.random.choice(base_deepseek_descriptions[key], 1)[0]
-                deepseek_descriptions[key].append(structured_descriptor_builder(word, key))
-                word = np.random.choice(base_deepseek_descriptions[key], 1)[0]
-                deepseek_descriptions[key].append(structured_descriptor_builder(word, key))
-
-        # To ensure the correct number of random word sequences, random character sequences and DEEPSEEK descriptions, we
-        # subsample for each class individually. This does result in slightly different descriptor distributions per class.
-        for key in key_list:
-            deepseek_descriptions[key] = list(
-                np.random.choice(deepseek_descriptions[key], effective_waffle_count * 3, replace=False))
-
-    ### If a specific class subset should be used, we subsample here:
-    if classes_to_load is not None:
-        deepseek_descriptions = {c: deepseek_descriptions[c] for c in classes_to_load}
-        keys_to_remove = [k for k in deepseek_descriptions.keys() if k not in classes_to_load]
-        for k in keys_to_remove:
-            print(f"Skipping descriptions for \"{k}\", not in classes to load")
-            deepseek_descriptions.pop(k)
-
-            ### Because of the inconsistent class naming, we have to do some re-sorting of the keys.
-    if opt.dataset == 'pets':
-        sorted_keys = np.array(list(deepseek_descriptions.keys()))[np.argsort([x.lower() for x in deepseek_descriptions.keys()])]
-        deepseek_descriptions = {key: deepseek_descriptions[key] for key in sorted_keys}
-
-    ### Only produce sample prompt if in the right call.
-    ### > Want to avoid printing prompts several times.
-    if mode == opt.mode:
-        sel_prompt = deepseek_descriptions[key_list[1]]
-        if isinstance(sel_prompt, list):
-            sel_prompt = sel_prompt[0]
-        print(f'Sample Prompt: {sel_prompt}')
-
-    return deepseek_descriptions
-"""
-
-
 def load_gpt_descriptions(opt: argparse.Namespace, classes_to_load: List = None, mode: str = 'clip'):
     ### Prepare extracted descriptions.
     gpt_descriptions = load_json(opt.descriptor_fname)
@@ -660,6 +476,32 @@ def aggregate_similarity(similarity_matrix_chunk: torch.Tensor, aggregation_meth
     else:
         raise ValueError("Unknown aggregate_similarity")
 
+def get_clip_text_features(opt, model):
+    text_prompts = [opt.label_before_text + cls for cls in opt.classes_to_load]
+    text_tokens = clip.tokenize(text_prompts).to(opt.device)
+    with torch.no_grad():
+        text_features = model.encode_text(text_tokens)
+    return text_features
+
+def compute_descriptor_encodings(opt, model):
+    descriptors = load_json(opt.descriptor_fname)  # 从预先计算好的描述符中加载
+    descriptor_prompts = [opt.label_before_text + desc for desc in descriptors]
+    text_tokens = clip.tokenize(descriptor_prompts).to(opt.device)
+    with torch.no_grad():
+        descriptor_features = model.encode_text(text_tokens)
+    return descriptor_features
+
+def compute_filtered_encodings(opt, model):
+    descriptors = load_json(opt.descriptor_fname)  # 从预先计算好的过滤描述符中加载
+    descriptor_prompts = [opt.label_before_text + desc for desc in descriptors]
+    text_tokens = clip.tokenize(descriptor_prompts).to(opt.device)
+    with torch.no_grad():
+        descriptor_features = model.encode_text(text_tokens)
+    return descriptor_features
+
+def save_results(savename, results):
+    with open(f'results/{savename}_results.json', 'w') as f:
+        json.dump(results, f)
 
 openai_imagenet_classes = ["tench", "goldfish", "great white shark", "tiger shark", "hammerhead shark", "electric ray",
                            "stingray", "rooster", "hen", "ostrich", "brambling", "goldfinch", "house finch", "junco",

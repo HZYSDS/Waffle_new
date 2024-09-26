@@ -4,7 +4,7 @@ source params.sh
 # 使用指定的 backbones 和只运行 pets 数据集
 for model_size in "${backbones[@]}"; do
     # clip
-    dataset="pets"
+    dataset="dtd"
     concept=${concepts[${#concepts[@]}-1]} # 如果需要，可以指定 concept
     savename="clip"
     python base_main_class.py --savename=${savename} --dataset=${dataset} --mode=clip --model_size=${model_size}

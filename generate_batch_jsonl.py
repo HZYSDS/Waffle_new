@@ -26,8 +26,8 @@ def get_class_names(dataset):
 
 
 def generate_comparative_prompt(target_category, similar_category):
-    qa_template = """Q: What are useful features for distinguishing a {target} from a {similar} in the photo? Give the list of features, each beginning with a hyphen (-).
-A: There are several useful visual features to tell the photo is a {target}, not a {similar}.\n{features}"""
+    qa_template = """Q: What are some distinct visual characteristics that separate a {target} from a {similar} in a photograph? Please provide a list, with each feature starting with a hyphen (-).
+A: Here are some visual traits that distinguish a {target} from a {similar}.\n{features}"""
 
     examples = [
         ("soccer stadium", "baseball stadium",
